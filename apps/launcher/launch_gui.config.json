@@ -1,0 +1,12 @@
+﻿{
+  "checkpoint": "D:\\projects\\pokestrategist\\runs\\pokestrategist_consequence_value_v2_full\\best_ranking_model.pt",
+  "host": "127.0.0.1",
+  "port": 8765,
+  "device": "auto",
+  "topk": 3,
+  "hidden_candidate_topk": null,
+  "use_team_preview_prior": true,
+  "use_usage_priors": true,
+  "usage_data_dir": null,
+  "python_path": "C:\\Users\\xhj\\.conda\\envs\\pokestrategist\\python.exe"
+}

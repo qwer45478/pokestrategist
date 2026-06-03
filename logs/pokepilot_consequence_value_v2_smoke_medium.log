@@ -1,0 +1,66 @@
+Indexing dataset from data/processed/pokepilot_v1_metamon_gen9ou_1550_full.jsonl...
+Loaded dataset with 200000 samples; train=162514 val=37486.
+Building train priors...
+Saved train priors cache to data/processed/.pokepilot_train_prior_cache/c9196e92c557c36d333e92830d828ae7.
+Using device=cuda, train_workers=8, eval_workers=4, pin_memory=True.
+Initializing from checkpoint: runs/pokepilot_v1_metamon_gen9ou_1550_opt_unified_stage3/model.pt
+Expanding preview_prior_mlp from 13 → 20 dims
+Starting epoch 1/1...
+{"action_score_ce_loss": 1.4202523956148643, "bc_loss": 1.7534201986207736, "belief_loss": 0.0139949939947018, "candidate_future_loss": 0.043409793771158056, "candidate_response_loss": 0.7230516410249425, "consequence_value_gold_mean": 0.5681127367401863, "consequence_value_hard_negative_mean": 0.57043356415119, "consequence_value_loss": 0.03011003553456678, "consequence_value_margin_loss": 0.0518955584468804, "consequence_value_margin_mean": -0.004922575178031588, "consequence_value_mse_loss": 0.019730923680485936, "covered_top1": 0.488070207514398, "covered_top3": 0.8235975256726696, "ece": 0.02421322364243482, "endgame_stability": 0.9997751798561151, "epoch": 1.0, "false_switch_rate_on_move": 0.18714096332302255, "frontier_gold_recall": 0.6164968254815131, "frontier_loss": 0.8740466305590051, "frontier_mean_width": 1.95819772715147, "gold_candidate_coverage": 0.8754468334845009, "gold_in_top3": 0.7210158459158086, "gold_top1": 0.427279517686603, "head_loss": 0.47662981448211067, "head_routing_accuracy": 0.7665795230219282, "learning_rate": 5e-05, "line_accuracy": 0.691564850877661, "line_loss": 0.6993316315290496, "loss": 5.125099844444455, "opponent_loss": 0.7844212494497224, "outcome_proxy": 0.5717793417696904, "particle_loss": 0.008149795646331911, "particle_mae": 0.048779249514382506, "phase_loss": 2.025029227114099, "plan_loss": 2.251611985935001, "preference_loss": 0.3000202235978419, "ranking_score": 0.6478611021785876, "recoverable_bc_loss": 1.7555295313437154, "resource_loss": 0.0037060413909269364, "reveal_bce": 0.25000720858313147, "reveal_loss": 0.25288204539009906, "route_consistency_loss": 0.4695803127889558, "selection_score": 0.6104619088524871, "state_future_loss": 0.04548839184008245, "switch_follow_loss": 0.0926106572444514, "switch_head_recall": 0.6907066795740562, "switch_ranking_loss": 0.9786018190421457, "switch_selection_score": 0.49826432887418537, "switch_target_accuracy": 0.40667957405614713, "switch_target_species_accuracy": 0.40667957405614713, "top1_family_accuracy": 0.6139892226431201, "train_loss": 5.125099844444455, "typed_consequence_axis_accuracy": 0.7904378828046439, "typed_consequence_loss": 0.5152643632231735}
+{
+  "gold_in_top3": 0.7210158459158086,
+  "gold_top1": 0.427279517686603,
+  "covered_top3": 0.8235975256726696,
+  "covered_top1": 0.488070207514398,
+  "top1_family_accuracy": 0.6139892226431201,
+  "gold_candidate_coverage": 0.8754468334845009,
+  "head_routing_accuracy": 0.7665795230219282,
+  "line_accuracy": 0.691564850877661,
+  "switch_head_recall": 0.6907066795740562,
+  "switch_target_accuracy": 0.40667957405614713,
+  "switch_target_species_accuracy": 0.40667957405614713,
+  "false_switch_rate_on_move": 0.18714096332302255,
+  "frontier_gold_recall": 0.6164968254815131,
+  "frontier_mean_width": 1.95819772715147,
+  "particle_mae": 0.048779249514382506,
+  "reveal_bce": 0.25000720858313147,
+  "typed_consequence_axis_accuracy": 0.7904378828046439,
+  "consequence_value_gold_mean": 0.5681127367401863,
+  "consequence_value_hard_negative_mean": 0.57043356415119,
+  "consequence_value_margin_mean": -0.004922575178031588,
+  "ece": 0.02421322364243482,
+  "outcome_proxy": 0.5717793417696904,
+  "endgame_stability": 0.9997751798561151,
+  "epoch": 1.0,
+  "train_loss": 5.125099844444455,
+  "loss": 5.125099844444455,
+  "bc_loss": 1.7534201986207736,
+  "recoverable_bc_loss": 1.7555295313437154,
+  "preference_loss": 0.3000202235978419,
+  "action_score_ce_loss": 1.4202523956148643,
+  "head_loss": 0.47662981448211067,
+  "route_consistency_loss": 0.4695803127889558,
+  "switch_ranking_loss": 0.9786018190421457,
+  "line_loss": 0.6993316315290496,
+  "plan_loss": 2.251611985935001,
+  "phase_loss": 2.025029227114099,
+  "belief_loss": 0.0139949939947018,
+  "resource_loss": 0.0037060413909269364,
+  "opponent_loss": 0.7844212494497224,
+  "candidate_response_loss": 0.7230516410249425,
+  "state_future_loss": 0.04548839184008245,
+  "candidate_future_loss": 0.043409793771158056,
+  "switch_follow_loss": 0.0926106572444514,
+  "particle_loss": 0.008149795646331911,
+  "reveal_loss": 0.25288204539009906,
+  "typed_consequence_loss": 0.5152643632231735,
+  "consequence_value_loss": 0.03011003553456678,
+  "consequence_value_mse_loss": 0.019730923680485936,
+  "consequence_value_margin_loss": 0.0518955584468804,
+  "frontier_loss": 0.8740466305590051,
+  "learning_rate": 5e-05,
+  "ranking_score": 0.6478611021785876,
+  "switch_selection_score": 0.49826432887418537,
+  "selection_score": 0.6104619088524871,
+  "best_epoch": 1.0
+}

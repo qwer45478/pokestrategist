@@ -1,0 +1,53 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokestrategist"
+version = "0.0.1"
+description = "Deep-learning decision support for Pokémon Showdown Gen 9 OU singles."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "PokeStrategist" }]
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+    "pydantic>=2.6",
+    "tqdm>=4.66",
+    "duckdb>=1.1",
+]
+
+[project.scripts]
+pokestrategist-collect-replays = "pokestrategist.cli.collect_replays:main"
+pokestrategist-build-dataset = "pokestrategist.cli.build_dataset:main"
+pokestrategist-train-v1 = "pokestrategist.cli.train_v1:main"
+pokestrategist-eval-v1 = "pokestrategist.cli.evaluate_v1:main"
+pokestrategist-average-checkpoints = "pokestrategist.cli.average_checkpoints:main"
+pokestrategist-download-metamon-subset = "pokestrategist.cli.download_metamon_subset:main"
+pokestrategist-build-static-catalog = "pokestrategist.cli.build_static_catalog:main"
+pokestrategist-serve-showdown = "pokestrategist.cli.serve_showdown:main"
+pokestrategist-build-team-preview-prior = "pokestrategist.cli.build_team_preview_prior:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.5",
+]
+# `torch` is intentionally not listed here: on Windows/NVIDIA machines the default
+# `pip install torch` often resolves to a CPU-only wheel. Install the CUDA build from
+# PyTorch's official index URL as documented in README, then install the package extras.
+ml = [
+    "numpy>=1.26",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

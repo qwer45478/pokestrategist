@@ -1,0 +1,102 @@
+﻿#pokestrategist-panel {
+  position: fixed;
+  top: 48px; right: 16px;
+  z-index: 2147483647;
+  width: 380px;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  background: rgba(22,24,28,0.95);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.45);
+  color: #e0e4dc;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size: 13px;
+  backdrop-filter: blur(16px);
+  transition: opacity 0.2s;
+}
+#pokestrategist-panel.dragging{opacity:0.92;cursor:grabbing}
+#pokestrategist-panel *{box-sizing:border-box}
+
+.pokestrategist-drag-handle{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 14px 8px;cursor:grab;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  background:rgba(255,255,255,0.03);
+  border-radius:14px 14px 0 0
+}
+.pokestrategist-drag-handle:active{cursor:grabbing}
+
+.pokestrategist-title{font-size:14px;font-weight:700;letter-spacing:0.02em;color:#c8e0b8}
+
+.pokestrategist-status-row{
+  display:flex;align-items:center;gap:6px;
+  padding:4px 14px 6px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  background:rgba(255,255,255,0.02)
+}
+.pokestrategist-status-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.pokestrategist-status-dot.online{background:#6bc96b;box-shadow:0 0 6px rgba(107,201,107,0.6)}
+.pokestrategist-status-dot.offline{background:#c96b6b;box-shadow:0 0 6px rgba(201,107,107,0.6)}
+.pokestrategist-status-text{font-size:11px;color:rgba(224,228,220,0.55)}
+
+.pokestrategist-toggle{
+  background:none;border:1px solid rgba(255,255,255,0.12);
+  border-radius:6px;color:rgba(224,228,220,0.6);
+  font-size:11px;padding:3px 10px;cursor:pointer
+}
+.pokestrategist-toggle:hover{background:rgba(255,255,255,0.06)}
+
+.pokestrategist-collapsed .pokestrategist-body{display:none!important}
+.pokestrategist-collapsed .pokestrategist-status-row{display:none!important}
+
+.pokestrategist-body{display:flex;flex-direction:column;gap:10px;padding:10px 14px 14px}
+
+.pokestrategist-suggestions{display:flex;flex-direction:column;gap:8px}
+
+.pokestrategist-suggestion-card{
+  border-radius:10px;border:1px solid rgba(255,255,255,0.06);
+  background:rgba(255,255,255,0.04);overflow:hidden
+}
+.pokestrategist-suggestion-header{
+  display:flex;align-items:center;justify-content:space-between;padding:10px 12px
+}
+.pokestrategist-suggestion-rank{font-size:20px;font-weight:900;color:rgba(200,224,184,0.9);width:24px;flex-shrink:0}
+.pokestrategist-suggestion-label{flex:1;font-weight:600;font-size:14px;color:#f0f4e8}
+.pokestrategist-confidence{font-size:13px;font-weight:700;color:#b8d898;flex-shrink:0}
+
+.pokestrategist-reason-chain{
+  display:flex;flex-direction:column;gap:3px;
+  padding:6px 12px 10px 36px;font-size:11px;
+  color:rgba(224,228,220,0.6);
+  border-top:1px solid rgba(255,255,255,0.04)
+}
+.pokestrategist-chain-row{display:flex;align-items:flex-start;gap:6px}
+.pokestrategist-chain-icon{flex-shrink:0;width:14px;text-align:center}
+.pokestrategist-chain-text{line-height:1.4}
+.pokestrategist-chain-text strong{color:rgba(224,228,220,0.85)}
+.pokestrategist-chain-text .up{color:#b8d898}
+.pokestrategist-chain-text .dn{color:#d89898}
+
+.pokestrategist-snapshot{
+  display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;
+  padding:10px 12px;border-radius:10px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.04);
+  font-size:11px
+}
+.pokestrategist-snapshot dt{color:rgba(224,228,220,0.4)}
+.pokestrategist-snapshot dd{margin:0;color:rgba(224,228,220,0.75);font-weight:500}
+
+.pokestrategist-legal{display:flex;flex-wrap:wrap;gap:4px;padding:4px 0}
+.pokestrategist-pill{
+  padding:2px 8px;border-radius:6px;font-size:11px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.06);
+  color:rgba(224,228,220,0.65)
+}
+
+.pokestrategist-section-title{
+  font-size:10px;text-transform:uppercase;letter-spacing:0.1em;
+  color:rgba(224,228,220,0.3);margin-bottom:2px
+}

@@ -1,0 +1,6 @@
+/.duckdb_ext
+/.duckdb_extensions
+/.pytest_cache
+/.vscode
+/data
+/runs

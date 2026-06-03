@@ -1,0 +1,38 @@
+Indexing dataset from data/processed/pokepilot_v1_metamon_gen9ou_1550_full.jsonl...
+Loaded dataset with 17228080 samples; train=13781881 val=3446199.
+Building train priors...
+Using device=cuda, train_workers=8, eval_workers=0, pin_memory=True.
+Starting epoch 1/3...
+{"covered_top1": 0.44108093039440405, "covered_top3": 0.7936730333509514, "ece": 0.0591489371215278, "endgame_stability": 0.9995675455967634, "epoch": 1.0, "false_switch_rate_on_move": 0.219664584018415, "frontier_gold_recall": 0.6219870065541775, "frontier_mean_width": 2.2803703442546412, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.6989161101840027, "gold_top1": 0.3884201115489848, "head_routing_accuracy": 0.7589695197520515, "line_accuracy": 0.6694880359491718, "outcome_proxy": 0.5739670417537429, "particle_mae": 0.05609200844467606, "ranking_score": 0.6149997723948064, "reveal_bce": 0.26365408722996336, "selection_score": 0.5815907236532953, "switch_head_recall": 0.6796466922462854, "switch_selection_score": 0.4813635774287623, "switch_target_accuracy": 0.3892781912291093, "switch_target_species_accuracy": 0.3892781912291093, "top1_family_accuracy": 0.5786174855253571, "train_loss": 4.887339981484975, "typed_consequence_axis_accuracy": 0.7809287468251155}
+Starting epoch 2/3...
+{"covered_top1": 0.4538925040431587, "covered_top3": 0.8038725353867, "ece": 0.06274286074700904, "endgame_stability": 0.9995391879309774, "epoch": 2.0, "false_switch_rate_on_move": 0.21672846204250348, "frontier_gold_recall": 0.6325049714192361, "frontier_mean_width": 2.258181840340619, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7078978898200597, "gold_top1": 0.39970210658177313, "head_routing_accuracy": 0.7520932482424839, "line_accuracy": 0.678886216379263, "outcome_proxy": 0.5905732008601235, "particle_mae": 0.052861861107368596, "ranking_score": 0.6245105157274919, "reveal_bce": 0.2584958718700871, "selection_score": 0.5915075168482199, "switch_head_recall": 0.6920227641438982, "switch_selection_score": 0.4924985202104037, "switch_target_accuracy": 0.40288826513532305, "switch_target_species_accuracy": 0.40288826513532305, "top1_family_accuracy": 0.5871120617236555, "train_loss": 4.745140074018437, "typed_consequence_axis_accuracy": 0.7833396820040887}
+Starting epoch 3/3...
+{"covered_top1": 0.458917290220367, "covered_top3": 0.8066269578180255, "ece": 0.06800569751239977, "endgame_stability": 0.9991752645533903, "epoch": 3.0, "false_switch_rate_on_move": 0.21776022532352687, "frontier_gold_recall": 0.6349795818523538, "frontier_mean_width": 2.2528423344095914, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7103234607171554, "gold_top1": 0.40412698163977184, "head_routing_accuracy": 0.7592480875306389, "line_accuracy": 0.6826329530012631, "outcome_proxy": 0.573600806308837, "particle_mae": 0.05359892259957858, "ranking_score": 0.6282050553381758, "reveal_bce": 0.25639338444806953, "selection_score": 0.597133607869434, "switch_head_recall": 0.7091690057425386, "switch_selection_score": 0.5039192654632086, "switch_target_accuracy": 0.41365848633893854, "switch_target_species_accuracy": 0.41365848633893854, "top1_family_accuracy": 0.5959539771208802, "train_loss": 4.709144200583572, "typed_consequence_axis_accuracy": 0.7847276024827037}
+{
+  "gold_in_top3": 0.7103234607171554,
+  "gold_top1": 0.40412698163977184,
+  "covered_top3": 0.8066269578180255,
+  "covered_top1": 0.458917290220367,
+  "top1_family_accuracy": 0.5959539771208802,
+  "gold_candidate_coverage": 0.880609622369457,
+  "head_routing_accuracy": 0.7592480875306389,
+  "line_accuracy": 0.6826329530012631,
+  "switch_head_recall": 0.7091690057425386,
+  "switch_target_accuracy": 0.41365848633893854,
+  "switch_target_species_accuracy": 0.41365848633893854,
+  "false_switch_rate_on_move": 0.21776022532352687,
+  "frontier_gold_recall": 0.6349795818523538,
+  "frontier_mean_width": 2.2528423344095914,
+  "particle_mae": 0.05359892259957858,
+  "reveal_bce": 0.25639338444806953,
+  "typed_consequence_axis_accuracy": 0.7847276024827037,
+  "ece": 0.06800569751239977,
+  "outcome_proxy": 0.573600806308837,
+  "endgame_stability": 0.9991752645533903,
+  "epoch": 3.0,
+  "train_loss": 4.709144200583572,
+  "ranking_score": 0.6282050553381758,
+  "switch_selection_score": 0.5039192654632086,
+  "selection_score": 0.597133607869434,
+  "best_epoch": 3.0
+}

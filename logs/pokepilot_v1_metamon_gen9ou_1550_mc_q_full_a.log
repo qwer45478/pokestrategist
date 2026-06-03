@@ -1,0 +1,47 @@
+Indexing dataset from data/processed/pokepilot_v1_metamon_gen9ou_1550_full.jsonl...
+Loaded dataset with 17228080 samples; train=13781881 val=3446199.
+Using device=cuda, train_workers=8, eval_workers=0, pin_memory=True.
+Starting MC-Q epoch 1/4 (lr=0.0003)...
+{"covered_top1": 0.2645573482678673, "covered_top3": 0.5358463744696443, "ece": 0.4029415082375094, "endgame_stability": 1.0, "epoch": 1.0, "false_switch_rate_on_move": 0.4881569411329359, "frontier_gold_recall": 0.3248863457972102, "frontier_mean_width": 1.6973607734202232, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.4718714734697561, "gold_top1": 0.23297174655323155, "head_routing_accuracy": 0.766242750346106, "learning_rate": 0.0003, "line_accuracy": 0.6755921523974675, "mc_aux_loss": 0.6348917889844362, "mc_avg_q": 0.33054895436445764, "mc_avg_v": 0.9949951772795685, "mc_gold_loss": 0.08246171329353681, "mc_q_loss": 0.7756086623866186, "mc_q_top1": 0.25321715898926406, "mc_ranking_loss": 0.6931469491300634, "mc_v_loss": 0.29369318519439874, "mc_v_sign_acc": 0.9950125062666173, "outcome_proxy": 0.33576163504616197, "particle_mae": 0.4030976141238637, "ranking_score": 0.4235554882045169, "reveal_bce": 1.0594136798610687, "selection_score": 0.40849551871660494, "switch_head_recall": 0.6403090155280303, "switch_selection_score": 0.3633156102528693, "switch_target_accuracy": 0.25539515360646875, "switch_target_species_accuracy": 0.25539515360646875, "top1_family_accuracy": 0.42354402633161925, "typed_consequence_axis_accuracy": 0.6989454176876164}
+Starting MC-Q epoch 2/4 (lr=0.00023)...
+{"covered_top1": 0.28726658749500783, "covered_top3": 0.5898744413059896, "ece": 0.6001230695715253, "endgame_stability": 1.0, "epoch": 2.0, "false_switch_rate_on_move": 0.11239513705807688, "frontier_gold_recall": 0.2776363175777139, "frontier_mean_width": 1.13274189911842, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.519449109003862, "gold_top1": 0.2529697211333414, "head_routing_accuracy": 0.7131282900378069, "learning_rate": 0.00023249999999999999, "line_accuracy": 0.6777171022335042, "mc_aux_loss": 0.6177707623248336, "mc_avg_q": 0.13281615759093973, "mc_avg_v": 0.9999999844954409, "mc_gold_loss": 0.09913107685298303, "mc_q_loss": 0.7922780933185888, "mc_q_top1": 0.25320748014837663, "mc_ranking_loss": 0.6931470164759161, "mc_v_loss": 0.3796993226811563, "mc_v_sign_acc": 0.9999998189507254, "outcome_proxy": 0.4690441765365045, "particle_mae": 0.42961784131504605, "ranking_score": 0.43780969215018284, "reveal_bce": 0.4686824281292864, "selection_score": 0.360263058844761, "switch_head_recall": 0.19821904050678546, "switch_selection_score": 0.12762315892849543, "switch_target_accuracy": 0.06667525043133417, "switch_target_species_accuracy": 0.06667525043133417, "top1_family_accuracy": 0.45104011695203905, "typed_consequence_axis_accuracy": 0.697077491567691}
+Starting MC-Q epoch 3/4 (lr=9.8e-05)...
+{"covered_top1": 0.2921368307699202, "covered_top3": 0.5899713189462349, "ece": 0.6275038409528018, "endgame_stability": 1.0, "epoch": 3.0, "false_switch_rate_on_move": 0.024753835178037743, "frontier_gold_recall": 0.27193351283544565, "frontier_mean_width": 1.0759445406373804, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.5195344203860544, "gold_top1": 0.25725850422450935, "head_routing_accuracy": 0.711948729600351, "learning_rate": 9.750000000000003e-05, "line_accuracy": 0.6877435110392638, "mc_aux_loss": 0.6023919666582473, "mc_avg_q": 0.049905068679665036, "mc_avg_v": 0.9999999842175457, "mc_gold_loss": 0.10710084474306421, "mc_q_loss": 0.8002479694276058, "mc_q_top1": 0.25320455041805423, "mc_ranking_loss": 0.6931471246413627, "mc_v_loss": 0.420309319537518, "mc_v_sign_acc": 0.9999999842175457, "outcome_proxy": 0.3376299383206097, "particle_mae": 0.45861447432134594, "ranking_score": 0.4380298935766693, "reveal_bce": 0.4608041536844062, "selection_score": 0.34711496820139726, "switch_head_recall": 0.07750727474055571, "switch_selection_score": 0.07437019207558099, "switch_target_accuracy": 0.027212937450106868, "switch_target_species_accuracy": 0.027212937450106868, "top1_family_accuracy": 0.44762563044095827, "typed_consequence_axis_accuracy": 0.699167873792819}
+Starting MC-Q epoch 4/4 (lr=3e-05)...
+{"covered_top1": 0.2919934914042513, "covered_top3": 0.5829513147020716, "ece": 0.6289197090986192, "endgame_stability": 1.0, "epoch": 4.0, "false_switch_rate_on_move": 0.01642580070728706, "frontier_gold_recall": 0.27168251165994767, "frontier_mean_width": 1.0752182331896678, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.5133525370995697, "gold_top1": 0.25713227819983697, "head_routing_accuracy": 0.7344900860339174, "learning_rate": 2.9999999999999997e-05, "line_accuracy": 0.68989602747839, "mc_aux_loss": 0.5912770752199462, "mc_avg_q": 0.00920122510161237, "mc_avg_v": 0.9999999844334403, "mc_gold_loss": 0.11084524501308558, "mc_q_loss": 0.8039923701514212, "mc_q_top1": 0.25320992770091555, "mc_ranking_loss": 0.6931471252015817, "mc_v_loss": 0.4399197054544586, "mc_v_sign_acc": 0.9999999844334403, "outcome_proxy": 0.33574642799274235, "particle_mae": 0.4591705745776622, "ranking_score": 0.4360688082588009, "reveal_bce": 0.4658810730688106, "selection_score": 0.34444376877440724, "switch_head_recall": 0.06278989519223341, "switch_selection_score": 0.06956865032122622, "switch_target_accuracy": 0.02143949733474107, "switch_target_species_accuracy": 0.02143949733474107, "top1_family_accuracy": 0.44704324967884906, "typed_consequence_axis_accuracy": 0.6944220556776228}
+{
+  "gold_in_top3": 0.4718714734697561,
+  "gold_top1": 0.23297174655323155,
+  "covered_top3": 0.5358463744696443,
+  "covered_top1": 0.2645573482678673,
+  "top1_family_accuracy": 0.42354402633161925,
+  "gold_candidate_coverage": 0.880609622369457,
+  "head_routing_accuracy": 0.766242750346106,
+  "line_accuracy": 0.6755921523974675,
+  "switch_head_recall": 0.6403090155280303,
+  "switch_target_accuracy": 0.25539515360646875,
+  "switch_target_species_accuracy": 0.25539515360646875,
+  "false_switch_rate_on_move": 0.4881569411329359,
+  "frontier_gold_recall": 0.3248863457972102,
+  "frontier_mean_width": 1.6973607734202232,
+  "particle_mae": 0.4030976141238637,
+  "reveal_bce": 1.0594136798610687,
+  "typed_consequence_axis_accuracy": 0.6989454176876164,
+  "ece": 0.4029415082375094,
+  "outcome_proxy": 0.33576163504616197,
+  "endgame_stability": 1.0,
+  "mc_q_loss": 0.7756086623866186,
+  "mc_v_loss": 0.29369318519439874,
+  "mc_gold_loss": 0.08246171329353681,
+  "mc_ranking_loss": 0.6931469491300634,
+  "mc_q_top1": 0.25321715898926406,
+  "mc_v_sign_acc": 0.9950125062666173,
+  "mc_avg_q": 0.33054895436445764,
+  "mc_avg_v": 0.9949951772795685,
+  "mc_aux_loss": 0.6348917889844362,
+  "epoch": 1.0,
+  "learning_rate": 0.0003,
+  "ranking_score": 0.4235554882045169,
+  "switch_selection_score": 0.3633156102528693,
+  "selection_score": 0.40849551871660494
+}

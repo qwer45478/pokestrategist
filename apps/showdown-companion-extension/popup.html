@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pokestrategist</title>
+    <style>
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: #f5f1e4;
+        color: #253226;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+      main {
+        display: grid;
+        gap: 12px;
+        padding: 16px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 18px;
+      }
+      .card {
+        display: grid;
+        gap: 8px;
+        padding: 12px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(37, 50, 38, 0.08);
+      }
+      label {
+        display: grid;
+        gap: 6px;
+        font-size: 13px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid rgba(37, 50, 38, 0.18);
+        border-radius: 10px;
+        font: inherit;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 12px;
+        background: #36573c;
+        color: #f7f3e6;
+        font: inherit;
+        cursor: pointer;
+      }
+      .muted {
+        font-size: 12px;
+        color: #617063;
+        line-height: 1.5;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>pokestrategist Companion</h1>
+        <div class="muted">在 Pokemon Showdown 页面注入侧边建议面板，并向本地 pokestrategist 服务请求建议。</div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <label for="enabled">启用面板</label>
+          <input id="enabled" type="checkbox">
+        </div>
+        <label for="endpoint">
+          本地建议接口
+          <input id="endpoint" type="text" placeholder="http://127.0.0.1:8765/api/suggest">
+        </label>
+        <label for="refreshMs">
+          最小刷新间隔（毫秒）
+          <input id="refreshMs" type="number" min="500" step="100">
+        </label>
+        <button id="saveButton" type="button">保存设置</button>
+        <div class="muted" id="statusText">尚未加载配置。</div>
+      </div>
+      <div class="card">
+        <div class="muted">
+          当前扩展只负责 Showdown 页面抓取、界面展示和本地接口对接。
+          要得到真正模型建议，还需要本地服务实现一个 POST 接口，接收当前 battle snapshot 并返回 suggestion list。
+        </div>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+Indexing dataset from data/processed/pokepilot_v1_metamon_gen9ou_1550_full.jsonl...
+Loaded dataset with 17228080 samples; train=13781881 val=3446199.
+Building train priors...
+Saved train priors cache to data/processed/.pokepilot_train_prior_cache/50869e0116e092f63e96add0c68fa2d9.
+Using device=cuda, train_workers=8, eval_workers=0, pin_memory=True.
+Starting epoch 1/5...
+{"covered_top1": 0.4601335329759625, "covered_top3": 0.8013965537921335, "ece": 0.03090567148941986, "endgame_stability": 0.9998038594783135, "epoch": 1.0, "false_switch_rate_on_move": 0.2037259824172024, "frontier_gold_recall": 0.6083281899855464, "frontier_mean_width": 2.0754259983245307, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7057175166030749, "gold_top1": 0.4051980167134864, "head_routing_accuracy": 0.7381866224208178, "learning_rate": 0.001, "line_accuracy": 0.6722542720254983, "outcome_proxy": 0.597954651433947, "particle_mae": 0.054548405481445766, "ranking_score": 0.6280349801056523, "reveal_bce": 0.2617201585767652, "selection_score": 0.5917499244272122, "switch_head_recall": 0.6870424638838102, "switch_selection_score": 0.4828947573918917, "switch_target_accuracy": 0.3903041227821698, "switch_target_species_accuracy": 0.3903041227821698, "top1_family_accuracy": 0.5966318253821093, "train_loss": 5.160708681454196, "typed_consequence_axis_accuracy": 0.78173401749597}
+Starting epoch 2/5...
+{"covered_top1": 0.4722069912704679, "covered_top3": 0.8112019549512383, "ece": 0.031213210380340736, "endgame_stability": 0.999976368611845, "epoch": 2.0, "false_switch_rate_on_move": 0.18949742543954973, "frontier_gold_recall": 0.6106243429355066, "frontier_mean_width": 2.003904591696533, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7143522472149751, "gold_top1": 0.41583002026290417, "head_routing_accuracy": 0.7601987000750682, "learning_rate": 0.001, "line_accuracy": 0.6784648826141497, "outcome_proxy": 0.5884772858620959, "particle_mae": 0.05443243285592596, "ranking_score": 0.6366288227310603, "reveal_bce": 0.25871830183101957, "selection_score": 0.599344704899263, "switch_head_recall": 0.6825534983132903, "switch_selection_score": 0.48749235140387104, "switch_target_accuracy": 0.39503206036103317, "switch_target_species_accuracy": 0.39503206036103317, "top1_family_accuracy": 0.6027318793836339, "train_loss": 4.995857519614182, "typed_consequence_axis_accuracy": 0.7837988951994823}
+Starting epoch 3/5...
+{"covered_top1": 0.48139487985195517, "covered_top3": 0.8199954131402986, "ece": 0.03418288489233012, "endgame_stability": 0.99985821167107, "epoch": 3.0, "false_switch_rate_on_move": 0.16743247687016186, "frontier_gold_recall": 0.621306546720024, "frontier_mean_width": 2.0072877393325226, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7220958511101652, "gold_top1": 0.4239209633570203, "head_routing_accuracy": 0.7618927403786027, "learning_rate": 0.0008, "line_accuracy": 0.6849439048644608, "outcome_proxy": 0.579746736053198, "particle_mae": 0.05237530133326797, "ranking_score": 0.6440807803331831, "reveal_bce": 0.2562261197535189, "selection_score": 0.6017623523053622, "switch_head_recall": 0.6557412509978626, "switch_selection_score": 0.47480706822189983, "switch_target_accuracy": 0.384540983184405, "switch_target_species_accuracy": 0.384540983184405, "top1_family_accuracy": 0.6100660466792545, "train_loss": 4.945245531004068, "typed_consequence_axis_accuracy": 0.7862968225452063}
+Starting epoch 4/5...
+{"covered_top1": 0.48840071491744314, "covered_top3": 0.8255335849076499, "ece": 0.02745201448146234, "endgame_stability": 0.9999551003625055, "epoch": 4.0, "false_switch_rate_on_move": 0.17853261769736614, "frontier_gold_recall": 0.6234271439345204, "frontier_mean_width": 1.9743523226604152, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7269728184588296, "gold_top1": 0.43009036912842236, "head_routing_accuracy": 0.7685011805760491, "learning_rate": 0.00040000000000000013, "line_accuracy": 0.6905657508460771, "outcome_proxy": 0.5775918329646722, "particle_mae": 0.0495541058399283, "ranking_score": 0.6499011297251232, "reveal_bce": 0.25304146275208583, "selection_score": 0.611415279159865, "switch_head_recall": 0.6865634898153632, "switch_selection_score": 0.4959577274640908, "switch_target_accuracy": 0.40452501738212343, "switch_target_species_accuracy": 0.40452501738212343, "top1_family_accuracy": 0.6184721195728976, "train_loss": 4.895251964900989, "typed_consequence_axis_accuracy": 0.7896870456801139}
+Starting epoch 5/5...
+{"covered_top1": 0.4924234435981015, "covered_top3": 0.8288287427391198, "ece": 0.03136035914143551, "endgame_stability": 0.9997660492572654, "epoch": 5.0, "false_switch_rate_on_move": 0.17986655753837602, "frontier_gold_recall": 0.625260177952579, "frontier_mean_width": 1.9614015325290268, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.729874566152448, "gold_top1": 0.4336328227127917, "head_routing_accuracy": 0.7634118052962119, "learning_rate": 0.0002, "line_accuracy": 0.6936392820031577, "outcome_proxy": 0.5836347991405401, "particle_mae": 0.04869274499345474, "ranking_score": 0.6524633007818209, "reveal_bce": 0.2516045218370422, "selection_score": 0.614836249452535, "switch_head_recall": 0.6931774521669714, "switch_selection_score": 0.5019550954646773, "switch_target_accuracy": 0.41220920351247653, "switch_target_species_accuracy": 0.41220920351247653, "top1_family_accuracy": 0.6187913118191956, "train_loss": 4.8642991070797335, "typed_consequence_axis_accuracy": 0.7909404578160485}
+{
+  "gold_in_top3": 0.729874566152448,
+  "gold_top1": 0.4336328227127917,
+  "covered_top3": 0.8288287427391198,
+  "covered_top1": 0.4924234435981015,
+  "top1_family_accuracy": 0.6187913118191956,
+  "gold_candidate_coverage": 0.880609622369457,
+  "head_routing_accuracy": 0.7634118052962119,
+  "line_accuracy": 0.6936392820031577,
+  "switch_head_recall": 0.6931774521669714,
+  "switch_target_accuracy": 0.41220920351247653,
+  "switch_target_species_accuracy": 0.41220920351247653,
+  "false_switch_rate_on_move": 0.17986655753837602,
+  "frontier_gold_recall": 0.625260177952579,
+  "frontier_mean_width": 1.9614015325290268,
+  "particle_mae": 0.04869274499345474,
+  "reveal_bce": 0.2516045218370422,
+  "typed_consequence_axis_accuracy": 0.7909404578160485,
+  "ece": 0.03136035914143551,
+  "outcome_proxy": 0.5836347991405401,
+  "endgame_stability": 0.9997660492572654,
+  "epoch": 5.0,
+  "train_loss": 4.8642991070797335,
+  "learning_rate": 0.0002,
+  "ranking_score": 0.6524633007818209,
+  "switch_selection_score": 0.5019550954646773,
+  "selection_score": 0.614836249452535,
+  "best_epoch": 5.0
+}

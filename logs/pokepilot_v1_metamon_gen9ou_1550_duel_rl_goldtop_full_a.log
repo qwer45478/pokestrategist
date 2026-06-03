@@ -1,0 +1,54 @@
+Indexing dataset from data/processed/pokepilot_v1_metamon_gen9ou_1550_full.jsonl...
+Loaded dataset with 17228080 samples; train=13781881 val=3446199.
+Using device=cuda, train_workers=8, eval_workers=0, pin_memory=True.
+Starting duel RL epoch 1/2...
+{"covered_top1": 0.5032187101697797, "covered_top3": 0.8366122350528346, "duel_entropy": 1.5253361835018453, "duel_expected_reward": 0.5020816293513582, "duel_gold_logprob_advantage": 0.016119806588298015, "duel_gold_logprob_loss": -0.016119806577462998, "duel_imitation_loss": 1.3665867565831225, "duel_kl": 0.03390464021120601, "duel_loss": 0.3867719363540497, "duel_policy_advantage": -0.004956882369765317, "duel_top1_margin_deficit": 0.5319735681727663, "duel_top1_margin_loss": 0.5319735741624595, "duel_top1_reward_gap": 0.013173165512767888, "duel_top1_tie_rate": 0.8754917445150205, "duel_top1_win_rate": 0.07188081432769695, "duel_top3_margin_deficit": 0.1263555076547054, "duel_top3_margin_loss": 0.12635550888447467, "ece": 0.06882614283468133, "endgame_stability": 0.9999645529177675, "epoch": 1.0, "false_switch_rate_on_move": 0.11897676876302328, "frontier_gold_recall": 0.6560961801683536, "frontier_mean_width": 2.0996332481090034, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7367287843795439, "gold_policy_score": 0.545895579448546, "gold_top1": 0.44313923833185487, "head_routing_accuracy": 0.7684718729243436, "learning_rate": 2e-05, "line_accuracy": 0.687843911509463, "outcome_proxy": 0.5808960661827168, "particle_mae": 0.051739403719826764, "ranking_score": 0.6596577707270959, "reference_expected_reward": 0.5070385117737285, "reference_top1_margin_deficit": 0.6047206322056851, "reference_top3_margin_deficit": 0.14811112951160416, "reveal_bce": 0.25226949822161493, "selection_score": 0.6064991191501306, "switch_head_recall": 0.6013627584786135, "switch_selection_score": 0.44702316441923473, "switch_target_accuracy": 0.3619210465325883, "switch_target_species_accuracy": 0.3619210465325883, "top1_family_accuracy": 0.6260134716538424, "typed_consequence_axis_accuracy": 0.7888155093852686}
+Starting duel RL epoch 2/2...
+{"covered_top1": 0.5038810368939052, "covered_top3": 0.8371009069592416, "duel_entropy": 1.5251067277713608, "duel_expected_reward": 0.5027372354813304, "duel_gold_logprob_advantage": 0.02031599044296986, "duel_gold_logprob_loss": -0.020315990435059675, "duel_imitation_loss": 1.3623848922522446, "duel_kl": 0.03873903331795829, "duel_loss": 0.37887239854419397, "duel_policy_advantage": -0.00430143383056143, "duel_top1_margin_deficit": 0.5236284192550482, "duel_top1_margin_loss": 0.5236284250687043, "duel_top1_reward_gap": 0.01562529173635753, "duel_top1_tie_rate": 0.8668202176469778, "duel_top1_win_rate": 0.07711493710941808, "duel_top3_margin_deficit": 0.12437407461160607, "duel_top3_margin_loss": 0.12437407579736605, "ece": 0.06655698850071048, "endgame_stability": 0.9998889324756715, "epoch": 2.0, "false_switch_rate_on_move": 0.1148816300082331, "frontier_gold_recall": 0.6563048158275248, "frontier_mean_width": 2.0963565946133698, "gold_candidate_coverage": 0.880609622369457, "gold_in_top3": 0.7371591135625075, "gold_policy_score": 0.5464253079987546, "gold_top1": 0.4437224896182722, "head_routing_accuracy": 0.7678491578692931, "learning_rate": 2e-05, "line_accuracy": 0.6787126918671846, "outcome_proxy": 0.5756301760223799, "particle_mae": 0.05672901401646037, "ranking_score": 0.6601850160751113, "reference_expected_reward": 0.5070386693668769, "reference_top1_margin_deficit": 0.6047109443561771, "reference_top3_margin_deficit": 0.1481054483558804, "reveal_bce": 0.25264574077753543, "selection_score": 0.6057771511714638, "switch_head_recall": 0.5933561661473489, "switch_selection_score": 0.44255355646052125, "switch_target_accuracy": 0.35775036695593954, "switch_target_species_accuracy": 0.35775036695593954, "top1_family_accuracy": 0.6258448801128431, "typed_consequence_axis_accuracy": 0.7849365154892189}
+{
+  "gold_in_top3": 0.7371591135625075,
+  "gold_top1": 0.4437224896182722,
+  "covered_top3": 0.8371009069592416,
+  "covered_top1": 0.5038810368939052,
+  "top1_family_accuracy": 0.6258448801128431,
+  "gold_candidate_coverage": 0.880609622369457,
+  "head_routing_accuracy": 0.7678491578692931,
+  "line_accuracy": 0.6787126918671846,
+  "switch_head_recall": 0.5933561661473489,
+  "switch_target_accuracy": 0.35775036695593954,
+  "switch_target_species_accuracy": 0.35775036695593954,
+  "false_switch_rate_on_move": 0.1148816300082331,
+  "frontier_gold_recall": 0.6563048158275248,
+  "frontier_mean_width": 2.0963565946133698,
+  "particle_mae": 0.05672901401646037,
+  "reveal_bce": 0.25264574077753543,
+  "typed_consequence_axis_accuracy": 0.7849365154892189,
+  "ece": 0.06655698850071048,
+  "outcome_proxy": 0.5756301760223799,
+  "endgame_stability": 0.9998889324756715,
+  "duel_loss": 0.37887239854419397,
+  "duel_policy_advantage": -0.00430143383056143,
+  "duel_expected_reward": 0.5027372354813304,
+  "reference_expected_reward": 0.5070386693668769,
+  "duel_gold_logprob_advantage": 0.02031599044296986,
+  "duel_gold_logprob_loss": -0.020315990435059675,
+  "duel_top1_margin_loss": 0.5236284250687043,
+  "duel_top3_margin_loss": 0.12437407579736605,
+  "duel_top1_margin_deficit": 0.5236284192550482,
+  "duel_top3_margin_deficit": 0.12437407461160607,
+  "reference_top1_margin_deficit": 0.6047109443561771,
+  "reference_top3_margin_deficit": 0.1481054483558804,
+  "duel_kl": 0.03873903331795829,
+  "duel_entropy": 1.5251067277713608,
+  "duel_imitation_loss": 1.3623848922522446,
+  "duel_top1_reward_gap": 0.01562529173635753,
+  "duel_top1_win_rate": 0.07711493710941808,
+  "duel_top1_tie_rate": 0.8668202176469778,
+  "epoch": 2.0,
+  "learning_rate": 2e-05,
+  "ranking_score": 0.6601850160751113,
+  "switch_selection_score": 0.44255355646052125,
+  "selection_score": 0.6057771511714638,
+  "gold_policy_score": 0.5464253079987546,
+  "best_epoch": 2.0
+}
