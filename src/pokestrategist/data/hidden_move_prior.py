@@ -6,7 +6,7 @@ from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from typing import Iterable, Sequence
 
-from pokepilot.data.schema import ActionHead, DecisionSample
+from pokestrategist.data.schema import ActionHead, DecisionSample
 
 ABSTRACT_FAMILY_ORDER = ("attack", "pivot", "recovery", "setup", "hazard", "status", "utility", "protect")
 

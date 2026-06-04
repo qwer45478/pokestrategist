@@ -7,8 +7,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterator, Sequence, TypeVar
 
-from pokepilot.data.protocol import ParsedReplay, TurnWindow, parse_replay_payload
-from pokepilot.data.schema import (
+from pokestrategist.data.protocol import ParsedReplay, TurnWindow, parse_replay_payload
+from pokestrategist.data.schema import (
     ActionHead,
     BattleObservation,
     BeliefSummaryTarget,

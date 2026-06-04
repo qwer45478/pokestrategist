@@ -14,8 +14,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Sequence
 
-from pokepilot.data.schema import ActionHead, DecisionSample
-from pokepilot.data.static_rules import load_static_rule_catalog, normalize_name
+from pokestrategist.data.schema import ActionHead, DecisionSample
+from pokestrategist.data.static_rules import load_static_rule_catalog, normalize_name
 
 DEFAULT_TEAM_WEIGHT = 0.75
 DEFAULT_TEAMMATE_ALPHA = 0.25

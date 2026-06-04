@@ -18,7 +18,7 @@ from typing import Any, Iterable
 
 import requests
 
-from pokepilot.data.static_rules import normalize_name
+from pokestrategist.data.static_rules import normalize_name
 
 SHOWDOWN_POKEDEX_URL = "https://play.pokemonshowdown.com/data/pokedex.json"
 SHOWDOWN_MOVES_URL = "https://play.pokemonshowdown.com/data/moves.json"

@@ -15,8 +15,8 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
 
-from pokepilot.data.static_rules import normalize_name
-from pokepilot.data.static_rules import load_static_rule_catalog
+from pokestrategist.data.static_rules import normalize_name
+from pokestrategist.data.static_rules import load_static_rule_catalog
 
 ABSTRACT_FAMILY_ORDER = ("attack", "pivot", "recovery", "setup", "hazard", "status", "utility", "protect")
 USAGE_PRIOR_FEATURE_DIM = 4

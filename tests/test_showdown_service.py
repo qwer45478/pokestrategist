@@ -4,6 +4,7 @@ from dataclasses import asdict
 
 import torch
 
+from pokestrategist.data.schema import ActionHead
 from pokestrategist.models import PokeStrategistDecisionModel
 from pokestrategist.serving.showdown import PokeStrategistLocalPredictor, ShowdownBattleSnapshot, snapshot_to_decision_sample
 from pokestrategist.training.dataset import DecisionTensorDataset, tensorize_decision_sample
@@ -71,3 +72,34 @@ def test_showdown_predictor_returns_structured_suggestions(tmp_path):
     assert len(result["suggestions"]) == 3
     assert all(suggestion["label"] for suggestion in result["suggestions"])
     assert all(0.0 <= suggestion["confidence"] <= 1.0 for suggestion in result["suggestions"])
+
+
+def test_showdown_snapshot_filtering():
+    # Test that active or fainted switch targets are filtered out cleanly
+    snapshot = ShowdownBattleSnapshot.model_validate(
+        {
+            "source": "showdown-dom",
+            "pageTitle": "[Gen 9] OU battle",
+            "turn": "Turn 3",
+            "forcedSwitch": False,
+            "self": {"name": "Great Tusk", "hp": "100%"},
+            "opponent": {"name": "Gholdengo", "hp": "100%"},
+            "legalMoves": [
+                {"label": "Headlong Rush"},
+            ],
+            "legalSwitches": [
+                {"label": "Dragapult"},
+                {"label": "Great Tusk (active)"},  # Same as self active name, should be skipped
+                {"label": "Clefable (fainted)"},   # Fainted bench, should be skipped
+                {"label": "Gholdengo (active)"},   # Active, should be skipped
+            ],
+            "recentLog": ["Turn 2"],
+        }
+    )
+
+    sample = snapshot_to_decision_sample(snapshot)
+    legal_switches = [action for action in sample.legal_actions if action.head is ActionHead.SWITCH]
+    
+    # Dragapult should be the only switch remaining
+    assert len(legal_switches) == 1
+    assert legal_switches[0].switch_species == "Dragapult"

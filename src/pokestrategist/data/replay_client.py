@@ -15,7 +15,7 @@ Behavior
 * Best-effort retries on transient HTTP errors (5xx and timeouts).
 
 This module intentionally does **not** parse the protocol log — that is
-``pokepilot.data.protocol``'s job. The downloader only deals with the JSON envelope.
+``pokestrategist.data.protocol``'s job. The downloader only deals with the JSON envelope.
 """
 
 from __future__ import annotations

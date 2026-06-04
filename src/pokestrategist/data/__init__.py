@@ -1,9 +1,9 @@
 """Data schema, protocol parsing, and dataset building for the v1 decision model."""
 
-from pokepilot.data.dataset_builder import BuildStats, build_dataset_from_directory, build_samples_from_replay
-from pokepilot.data.protocol import ParsedReplay, ReplayMeta, TurnWindow, parse_replay_payload
-from pokepilot.data.replay_client import ReplayClient, ReplaySearchHit
-from pokepilot.data.schema import (
+from pokestrategist.data.dataset_builder import BuildStats, build_dataset_from_directory, build_samples_from_replay
+from pokestrategist.data.protocol import ParsedReplay, ReplayMeta, TurnWindow, parse_replay_payload
+from pokestrategist.data.replay_client import ReplayClient, ReplaySearchHit
+from pokestrategist.data.schema import (
     ActionHead,
     BattleObservation,
     BeliefSummaryTarget,
