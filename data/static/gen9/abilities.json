@@ -1,0 +1,2250 @@
+{
+  "Adaptability": {
+    "num": 91,
+    "rating": 4,
+    "short_desc": "This Pokemon's same-type attack bonus (STAB) is 2 instead of 1.5.",
+    "tags": []
+  },
+  "Aerilate": {
+    "num": 184,
+    "rating": 4,
+    "short_desc": "This Pokemon's Normal-type moves become Flying type and have 1.2x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Aftermath": {
+    "num": 106,
+    "rating": 2,
+    "short_desc": "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP.",
+    "tags": []
+  },
+  "Air Lock": {
+    "num": 76,
+    "rating": 1.5,
+    "short_desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
+    "tags": []
+  },
+  "Analytic": {
+    "num": 148,
+    "rating": 2.5,
+    "short_desc": "This Pokemon's attacks have 1.3x power if it is the last to move in a turn.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Anger Point": {
+    "num": 83,
+    "rating": 1,
+    "short_desc": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages.",
+    "tags": []
+  },
+  "Anger Shell": {
+    "num": 271,
+    "rating": 3,
+    "short_desc": "At 1/2 or less of this Pokemon's max HP: +1 Atk, Sp. Atk, Spe, and -1 Def, Sp. Def.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Anticipation": {
+    "num": 107,
+    "rating": 0.5,
+    "short_desc": "On switch-in, this Pokemon shudders if any foe has a supereffective or OHKO move.",
+    "tags": [
+      "damage_modifier",
+      "switch_trigger"
+    ]
+  },
+  "Arena Trap": {
+    "num": 71,
+    "rating": 5,
+    "short_desc": "Prevents opposing Pokemon from choosing to switch out unless they are airborne.",
+    "tags": []
+  },
+  "Armor Tail": {
+    "num": 296,
+    "rating": 2.5,
+    "short_desc": "This Pokemon and its allies are protected from opposing priority moves.",
+    "tags": []
+  },
+  "Aroma Veil": {
+    "num": 165,
+    "rating": 2,
+    "short_desc": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment.",
+    "tags": []
+  },
+  "As One (Glastrier)": {
+    "num": 266,
+    "rating": 3.5,
+    "short_desc": "Combination of the Unnerve and Chilling Neigh Abilities.",
+    "tags": []
+  },
+  "As One (Spectrier)": {
+    "num": 267,
+    "rating": 3.5,
+    "short_desc": "Combination of the Unnerve and Grim Neigh Abilities.",
+    "tags": []
+  },
+  "Aura Break": {
+    "num": 188,
+    "rating": 1,
+    "short_desc": "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Bad Dreams": {
+    "num": 123,
+    "rating": 1.5,
+    "short_desc": "Causes sleeping foes to lose 1/8 of their max HP at the end of each turn.",
+    "tags": []
+  },
+  "Ball Fetch": {
+    "num": 237,
+    "rating": 0,
+    "short_desc": "No competitive use.",
+    "tags": []
+  },
+  "Battery": {
+    "num": 217,
+    "rating": 0,
+    "short_desc": "This Pokemon's allies have the power of their special attacks multiplied by 1.3.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Battle Armor": {
+    "num": 4,
+    "rating": 1,
+    "short_desc": "This Pokemon cannot be struck by a critical hit.",
+    "tags": []
+  },
+  "Battle Bond": {
+    "num": 210,
+    "rating": 3.5,
+    "short_desc": "After KOing a Pokemon: raises Attack, Sp. Atk, Speed by 1 stage. Once per battle.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Beads of Ruin": {
+    "num": 284,
+    "rating": 4.5,
+    "short_desc": "Active Pokemon without this Ability have their Special Defense multiplied by 0.75.",
+    "tags": []
+  },
+  "Beast Boost": {
+    "num": 224,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's highest stat is raised by 1 if it attacks and KOes another Pokemon.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Berserk": {
+    "num": 201,
+    "rating": 2,
+    "short_desc": "This Pokemon's Sp. Atk is raised by 1 when it reaches 1/2 or less of its max HP.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Big Pecks": {
+    "num": 145,
+    "rating": 0.5,
+    "short_desc": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage.",
+    "tags": []
+  },
+  "Blaze": {
+    "num": 66,
+    "rating": 2,
+    "short_desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Fire attacks.",
+    "tags": []
+  },
+  "Bulletproof": {
+    "num": 171,
+    "rating": 3,
+    "short_desc": "This Pokemon is immune to bullet moves.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Cheek Pouch": {
+    "num": 167,
+    "rating": 2,
+    "short_desc": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect.",
+    "tags": [
+      "healing"
+    ]
+  },
+  "Chilling Neigh": {
+    "num": 264,
+    "rating": 3,
+    "short_desc": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+    "tags": []
+  },
+  "Chlorophyll": {
+    "num": 34,
+    "rating": 3,
+    "short_desc": "If Sunny Day is active, this Pokemon's Speed is doubled.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Clear Body": {
+    "num": 29,
+    "rating": 2,
+    "short_desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+    "tags": []
+  },
+  "Cloud Nine": {
+    "num": 13,
+    "rating": 1.5,
+    "short_desc": "While this Pokemon is active, the effects of weather conditions are disabled.",
+    "tags": []
+  },
+  "Color Change": {
+    "num": 16,
+    "rating": 0,
+    "short_desc": "This Pokemon's type changes to the type of a move it's hit by, unless it has the type.",
+    "tags": []
+  },
+  "Comatose": {
+    "num": 213,
+    "rating": 4,
+    "short_desc": "This Pokemon cannot be statused, and is considered to be asleep.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Commander": {
+    "num": 279,
+    "rating": 0,
+    "short_desc": "If ally is Dondozo: this Pokemon cannot act or be hit, +2 to all Dondozo's stats.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Competitive": {
+    "num": 172,
+    "rating": 2.5,
+    "short_desc": "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",
+    "tags": []
+  },
+  "Compound Eyes": {
+    "num": 14,
+    "rating": 3,
+    "short_desc": "This Pokemon's moves have their accuracy multiplied by 1.3.",
+    "tags": []
+  },
+  "Contrary": {
+    "num": 126,
+    "rating": 4.5,
+    "short_desc": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa.",
+    "tags": []
+  },
+  "Corrosion": {
+    "num": 212,
+    "rating": 2.5,
+    "short_desc": "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+    "tags": []
+  },
+  "Costar": {
+    "num": 294,
+    "rating": 0,
+    "short_desc": "On switch-in, this Pokemon copies all of its ally's stat stage changes.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Cotton Down": {
+    "num": 238,
+    "rating": 2,
+    "short_desc": "If this Pokemon is hit, it lowers the Speed of all other Pokemon on the field 1 stage.",
+    "tags": []
+  },
+  "Cud Chew": {
+    "num": 291,
+    "rating": 2,
+    "short_desc": "If this Pokemon eats a Berry, it will eat that Berry again at the end of the next turn.",
+    "tags": []
+  },
+  "Curious Medicine": {
+    "num": 261,
+    "rating": 0,
+    "short_desc": "On switch-in, this Pokemon's allies have their stat stages reset to 0.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Cursed Body": {
+    "num": 130,
+    "rating": 2,
+    "short_desc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled.",
+    "tags": []
+  },
+  "Cute Charm": {
+    "num": 56,
+    "rating": 0.5,
+    "short_desc": "30% chance of infatuating Pokemon of the opposite gender if they make contact.",
+    "tags": []
+  },
+  "Damp": {
+    "num": 6,
+    "rating": 0.5,
+    "short_desc": "Prevents Explosion/Mind Blown/Misty Explosion/Self-Destruct/Aftermath while active.",
+    "tags": []
+  },
+  "Dancer": {
+    "num": 216,
+    "rating": 1.5,
+    "short_desc": "After another Pokemon uses a dance move, this Pokemon uses the same move.",
+    "tags": []
+  },
+  "Dark Aura": {
+    "num": 186,
+    "rating": 3,
+    "short_desc": "While this Pokemon is active, a Dark move used by any Pokemon has 1.33x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Dauntless Shield": {
+    "num": 235,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Dazzling": {
+    "num": 219,
+    "rating": 2.5,
+    "short_desc": "This Pokemon and its allies are protected from opposing priority moves.",
+    "tags": []
+  },
+  "Defeatist": {
+    "num": 129,
+    "rating": -1,
+    "short_desc": "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+    "tags": []
+  },
+  "Defiant": {
+    "num": 128,
+    "rating": 3,
+    "short_desc": "This Pokemon's Attack is raised by 2 for each of its stats that is lowered by a foe.",
+    "tags": []
+  },
+  "Delta Stream": {
+    "num": 191,
+    "rating": 4,
+    "short_desc": "On switch-in, strong winds begin until this Ability is not active in battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Desolate Land": {
+    "num": 190,
+    "rating": 4.5,
+    "short_desc": "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Disguise": {
+    "num": 209,
+    "rating": 3.5,
+    "short_desc": "(Mimikyu only) The first hit it takes is blocked, and it takes 1/8 HP damage instead.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Download": {
+    "num": 88,
+    "rating": 3.5,
+    "short_desc": "On switch-in, Attack or Sp. Atk is raised 1 stage based on the foes' weaker Defense.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Dragon's Maw": {
+    "num": 263,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Dragon-type attack.",
+    "tags": []
+  },
+  "Drizzle": {
+    "num": 2,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Rain Dance.",
+    "tags": [
+      "switch_trigger",
+      "weather_setter"
+    ]
+  },
+  "Drought": {
+    "num": 70,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Sunny Day.",
+    "tags": [
+      "switch_trigger",
+      "weather_setter"
+    ]
+  },
+  "Dry Skin": {
+    "num": 87,
+    "rating": 3,
+    "short_desc": "This Pokemon is healed 1/4 by Water, 1/8 by Rain; is hurt 1.25x by Fire, 1/8 by Sun.",
+    "tags": [
+      "damage_modifier",
+      "healing",
+      "immunity"
+    ]
+  },
+  "Early Bird": {
+    "num": 48,
+    "rating": 1.5,
+    "short_desc": "This Pokemon's sleep counter drops by 2 instead of 1.",
+    "tags": []
+  },
+  "Earth Eater": {
+    "num": 297,
+    "rating": 3.5,
+    "short_desc": "This Pokemon heals 1/4 of its max HP when hit by Ground moves; Ground immunity.",
+    "tags": [
+      "ground_immunity",
+      "healing",
+      "immunity"
+    ]
+  },
+  "Effect Spore": {
+    "num": 27,
+    "rating": 2,
+    "short_desc": "30% chance of poison/paralysis/sleep on others making contact with this Pokemon.",
+    "tags": []
+  },
+  "Electric Surge": {
+    "num": 226,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Electric Terrain.",
+    "tags": [
+      "switch_trigger",
+      "terrain_setter",
+      "weather_setter"
+    ]
+  },
+  "Electromorphosis": {
+    "num": 280,
+    "rating": 3,
+    "short_desc": "This Pokemon gains the Charge effect when it takes a hit from an attack.",
+    "tags": []
+  },
+  "Embody Aspect (Cornerstone)": {
+    "num": 304,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon's Defense is raised by 1 stage.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Embody Aspect (Hearthflame)": {
+    "num": 303,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon's Attack is raised by 1 stage.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Embody Aspect (Teal)": {
+    "num": 301,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon's Speed is raised by 1 stage.",
+    "tags": [
+      "speed_modifier",
+      "switch_trigger"
+    ]
+  },
+  "Embody Aspect (Wellspring)": {
+    "num": 302,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon's Special Defense is raised by 1 stage.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Emergency Exit": {
+    "num": 194,
+    "rating": 1,
+    "short_desc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Fairy Aura": {
+    "num": 187,
+    "rating": 3,
+    "short_desc": "While this Pokemon is active, a Fairy move used by any Pokemon has 1.33x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Filter": {
+    "num": 111,
+    "rating": 3,
+    "short_desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Flame Body": {
+    "num": 49,
+    "rating": 2,
+    "short_desc": "30% chance a Pokemon making contact with this Pokemon will be burned.",
+    "tags": []
+  },
+  "Flare Boost": {
+    "num": 138,
+    "rating": 2,
+    "short_desc": "While this Pokemon is burned, its special attacks have 1.5x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Flash Fire": {
+    "num": 18,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
+    "tags": [
+      "damage_modifier",
+      "immunity"
+    ]
+  },
+  "Flower Gift": {
+    "num": 122,
+    "rating": 1,
+    "short_desc": "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
+    "tags": []
+  },
+  "Flower Veil": {
+    "num": 166,
+    "rating": 0,
+    "short_desc": "This side's Grass types can't have stats lowered or status inflicted by other Pokemon.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Fluffy": {
+    "num": 218,
+    "rating": 3.5,
+    "short_desc": "This Pokemon takes 1/2 damage from contact moves, 2x damage from Fire moves.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Forecast": {
+    "num": 59,
+    "rating": 2,
+    "short_desc": "Castform's type changes to the current weather condition's type, except Sandstorm.",
+    "tags": []
+  },
+  "Forewarn": {
+    "num": 108,
+    "rating": 0.5,
+    "short_desc": "On switch-in, this Pokemon is alerted to the foes' move with the highest power.",
+    "tags": [
+      "damage_modifier",
+      "switch_trigger"
+    ]
+  },
+  "Friend Guard": {
+    "num": 132,
+    "rating": 0,
+    "short_desc": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Frisk": {
+    "num": 119,
+    "rating": 1.5,
+    "short_desc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Full Metal Body": {
+    "num": 230,
+    "rating": 2,
+    "short_desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+    "tags": []
+  },
+  "Fur Coat": {
+    "num": 169,
+    "rating": 4,
+    "short_desc": "This Pokemon's Defense is doubled.",
+    "tags": []
+  },
+  "Gale Wings": {
+    "num": 177,
+    "rating": 1.5,
+    "short_desc": "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
+    "tags": []
+  },
+  "Galvanize": {
+    "num": 206,
+    "rating": 4,
+    "short_desc": "This Pokemon's Normal-type moves become Electric type and have 1.2x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Gluttony": {
+    "num": 82,
+    "rating": 1.5,
+    "short_desc": "This Pokemon eats Berries at 1/2 max HP or less instead of their usual 1/4 max HP.",
+    "tags": []
+  },
+  "Good as Gold": {
+    "num": 283,
+    "rating": 5,
+    "short_desc": "This Pokemon is immune to Status moves.",
+    "tags": [
+      "immunity",
+      "status_control"
+    ]
+  },
+  "Gooey": {
+    "num": 183,
+    "rating": 2,
+    "short_desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+    "tags": []
+  },
+  "Gorilla Tactics": {
+    "num": 255,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's Attack is 1.5x, but it can only select the first move it executes.",
+    "tags": []
+  },
+  "Grass Pelt": {
+    "num": 179,
+    "rating": 0.5,
+    "short_desc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
+    "tags": []
+  },
+  "Grassy Surge": {
+    "num": 229,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Grassy Terrain.",
+    "tags": [
+      "switch_trigger",
+      "terrain_setter",
+      "weather_setter"
+    ]
+  },
+  "Grim Neigh": {
+    "num": 265,
+    "rating": 3,
+    "short_desc": "This Pokemon's Sp. Atk is raised by 1 stage if it attacks and KOes another Pokemon.",
+    "tags": []
+  },
+  "Guard Dog": {
+    "num": 275,
+    "rating": 2,
+    "short_desc": "Immune to Intimidate. Intimidated: +1 Attack. Cannot be forced to switch out.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Gulp Missile": {
+    "num": 241,
+    "rating": 2.5,
+    "short_desc": "When hit after Surf/Dive, attacker takes 1/4 max HP and -1 Defense or paralysis.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Guts": {
+    "num": 62,
+    "rating": 3.5,
+    "short_desc": "If this Pokemon is statused, its Attack is 1.5x; ignores burn halving physical damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Hadron Engine": {
+    "num": 289,
+    "rating": 4.5,
+    "short_desc": "On switch-in, summons Electric Terrain. During Electric Terrain, Sp. Atk is 1.3333x.",
+    "tags": [
+      "switch_trigger",
+      "terrain_setter",
+      "weather_setter"
+    ]
+  },
+  "Harvest": {
+    "num": 139,
+    "rating": 2.5,
+    "short_desc": "If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun.",
+    "tags": []
+  },
+  "Healer": {
+    "num": 131,
+    "rating": 0,
+    "short_desc": "30% chance this Pokemon's ally has its status cured at the end of each turn.",
+    "tags": []
+  },
+  "Heatproof": {
+    "num": 85,
+    "rating": 2,
+    "short_desc": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Heavy Metal": {
+    "num": 134,
+    "rating": 0,
+    "short_desc": "This Pokemon's weight is doubled.",
+    "tags": []
+  },
+  "Honey Gather": {
+    "num": 118,
+    "rating": 0,
+    "short_desc": "No competitive use.",
+    "tags": []
+  },
+  "Hospitality": {
+    "num": 299,
+    "rating": 0,
+    "short_desc": "On switch-in, this Pokemon restores 1/4 of its ally's maximum HP, rounded down.",
+    "tags": [
+      "healing",
+      "switch_trigger"
+    ]
+  },
+  "Huge Power": {
+    "num": 37,
+    "rating": 5,
+    "short_desc": "This Pokemon's Attack is doubled.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Hunger Switch": {
+    "num": 258,
+    "rating": 1,
+    "short_desc": "If Morpeko, it changes between Full Belly and Hangry Mode at the end of each turn.",
+    "tags": []
+  },
+  "Hustle": {
+    "num": 55,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's Attack is 1.5x and accuracy of its physical attacks is 0.8x.",
+    "tags": []
+  },
+  "Hydration": {
+    "num": 93,
+    "rating": 1.5,
+    "short_desc": "This Pokemon has its status cured at the end of each turn if Rain Dance is active.",
+    "tags": []
+  },
+  "Hyper Cutter": {
+    "num": 52,
+    "rating": 1.5,
+    "short_desc": "Prevents other Pokemon from lowering this Pokemon's Attack stat stage.",
+    "tags": []
+  },
+  "Ice Body": {
+    "num": 115,
+    "rating": 1,
+    "short_desc": "If Snow is active, this Pokemon heals 1/16 of its max HP each turn.",
+    "tags": [
+      "healing"
+    ]
+  },
+  "Ice Face": {
+    "num": 248,
+    "rating": 3,
+    "short_desc": "If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Ice Scales": {
+    "num": 246,
+    "rating": 4,
+    "short_desc": "This Pokemon receives 1/2 damage from special attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Illuminate": {
+    "num": 35,
+    "rating": 0.5,
+    "short_desc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
+    "tags": []
+  },
+  "Illusion": {
+    "num": 149,
+    "rating": 4.5,
+    "short_desc": "This Pokemon appears as the last Pokemon in the party until it takes direct damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Immunity": {
+    "num": 17,
+    "rating": 2,
+    "short_desc": "This Pokemon cannot be poisoned. Gaining this Ability while poisoned cures it.",
+    "tags": [
+      "immunity",
+      "status_immunity"
+    ]
+  },
+  "Imposter": {
+    "num": 150,
+    "rating": 5,
+    "short_desc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Infiltrator": {
+    "num": 151,
+    "rating": 2.5,
+    "short_desc": "Moves ignore substitutes and foe's Reflect/Light Screen/Safeguard/Mist/Aurora Veil.",
+    "tags": []
+  },
+  "Innards Out": {
+    "num": 215,
+    "rating": 4,
+    "short_desc": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Inner Focus": {
+    "num": 39,
+    "rating": 1,
+    "short_desc": "This Pokemon cannot be made to flinch. Immune to Intimidate.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Insomnia": {
+    "num": 15,
+    "rating": 1.5,
+    "short_desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Intimidate": {
+    "num": 22,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon lowers the Attack of opponents by 1 stage.",
+    "tags": [
+      "immunity",
+      "switch_trigger"
+    ]
+  },
+  "Intrepid Sword": {
+    "num": 234,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon's Attack is raised by 1 stage. Once per battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Iron Barbs": {
+    "num": 160,
+    "rating": 2.5,
+    "short_desc": "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+    "tags": []
+  },
+  "Iron Fist": {
+    "num": 89,
+    "rating": 3,
+    "short_desc": "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Justified": {
+    "num": 154,
+    "rating": 2.5,
+    "short_desc": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Keen Eye": {
+    "num": 51,
+    "rating": 0.5,
+    "short_desc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat.",
+    "tags": []
+  },
+  "Klutz": {
+    "num": 103,
+    "rating": -1,
+    "short_desc": "This Pokemon's held item has no effect, except Macho Brace. Fling cannot be used.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Leaf Guard": {
+    "num": 102,
+    "rating": 0.5,
+    "short_desc": "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Levitate": {
+    "num": 26,
+    "rating": 3.5,
+    "short_desc": "This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it.",
+    "tags": [
+      "ground_immunity",
+      "immunity"
+    ]
+  },
+  "Libero": {
+    "num": 236,
+    "rating": 4,
+    "short_desc": "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+    "tags": []
+  },
+  "Light Metal": {
+    "num": 135,
+    "rating": 1,
+    "short_desc": "This Pokemon's weight is halved.",
+    "tags": []
+  },
+  "Lightning Rod": {
+    "num": 31,
+    "rating": 3,
+    "short_desc": "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Limber": {
+    "num": 7,
+    "rating": 2,
+    "short_desc": "This Pokemon cannot be paralyzed. Gaining this Ability while paralyzed cures it.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Lingering Aroma": {
+    "num": 268,
+    "rating": 2,
+    "short_desc": "Making contact with this Pokemon has the attacker's Ability become Lingering Aroma.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Liquid Ooze": {
+    "num": 64,
+    "rating": 2.5,
+    "short_desc": "This Pokemon damages those draining HP from it for as much as they would heal.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Liquid Voice": {
+    "num": 204,
+    "rating": 1.5,
+    "short_desc": "This Pokemon's sound-based moves become Water type.",
+    "tags": []
+  },
+  "Long Reach": {
+    "num": 203,
+    "rating": 1,
+    "short_desc": "This Pokemon's attacks do not make contact with the target.",
+    "tags": []
+  },
+  "Magic Bounce": {
+    "num": 156,
+    "rating": 4,
+    "short_desc": "This Pokemon blocks certain Status moves and bounces them back to the user.",
+    "tags": [
+      "status_control"
+    ]
+  },
+  "Magic Guard": {
+    "num": 98,
+    "rating": 4,
+    "short_desc": "This Pokemon can only be damaged by direct attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Magician": {
+    "num": 170,
+    "rating": 1,
+    "short_desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack.",
+    "tags": []
+  },
+  "Magma Armor": {
+    "num": 40,
+    "rating": 0.5,
+    "short_desc": "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
+    "tags": []
+  },
+  "Magnet Pull": {
+    "num": 42,
+    "rating": 4,
+    "short_desc": "Prevents opposing Steel-type Pokemon from choosing to switch out.",
+    "tags": []
+  },
+  "Marvel Scale": {
+    "num": 63,
+    "rating": 2.5,
+    "short_desc": "If this Pokemon has a non-volatile status condition, its Defense is multiplied by 1.5.",
+    "tags": []
+  },
+  "Mega Launcher": {
+    "num": 178,
+    "rating": 3,
+    "short_desc": "This Pokemon's pulse moves have 1.5x power. Heal Pulse heals 3/4 target's max HP.",
+    "tags": [
+      "damage_modifier",
+      "healing"
+    ]
+  },
+  "Merciless": {
+    "num": 196,
+    "rating": 1.5,
+    "short_desc": "This Pokemon's attacks are critical hits if the target is poisoned.",
+    "tags": []
+  },
+  "Mimicry": {
+    "num": 250,
+    "rating": 0,
+    "short_desc": "This Pokemon's types change to match the Terrain. Type reverts when Terrain ends.",
+    "tags": []
+  },
+  "Mind's Eye": {
+    "num": 300,
+    "rating": 0,
+    "short_desc": "Fighting, Normal moves hit Ghost. Accuracy can't be lowered, ignores evasiveness.",
+    "tags": []
+  },
+  "Minus": {
+    "num": 58,
+    "rating": 0,
+    "short_desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x.",
+    "tags": []
+  },
+  "Mirror Armor": {
+    "num": 240,
+    "rating": 2,
+    "short_desc": "If this Pokemon's stat stages would be lowered, the attacker's are lowered instead.",
+    "tags": []
+  },
+  "Misty Surge": {
+    "num": 228,
+    "rating": 3.5,
+    "short_desc": "On switch-in, this Pokemon summons Misty Terrain.",
+    "tags": [
+      "switch_trigger",
+      "terrain_setter",
+      "weather_setter"
+    ]
+  },
+  "Mold Breaker": {
+    "num": 104,
+    "rating": 3,
+    "short_desc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Moody": {
+    "num": 141,
+    "rating": 5,
+    "short_desc": "Boosts a random stat (except accuracy/evasion) +2 and another stat -1 every turn.",
+    "tags": []
+  },
+  "Motor Drive": {
+    "num": 78,
+    "rating": 3,
+    "short_desc": "This Pokemon's Speed is raised 1 stage if hit by an Electric move; Electric immunity.",
+    "tags": [
+      "immunity",
+      "speed_modifier"
+    ]
+  },
+  "Moxie": {
+    "num": 153,
+    "rating": 3,
+    "short_desc": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+    "tags": []
+  },
+  "Multiscale": {
+    "num": 136,
+    "rating": 3.5,
+    "short_desc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Multitype": {
+    "num": 121,
+    "rating": 4,
+    "short_desc": "If this Pokemon is an Arceus, its type changes to match its held Plate.",
+    "tags": []
+  },
+  "Mummy": {
+    "num": 152,
+    "rating": 2,
+    "short_desc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Mycelium Might": {
+    "num": 298,
+    "rating": 2,
+    "short_desc": "This Pokemon's Status moves go last in their priority bracket and ignore Abilities.",
+    "tags": []
+  },
+  "Natural Cure": {
+    "num": 30,
+    "rating": 2.5,
+    "short_desc": "This Pokemon has its non-volatile status condition cured when it switches out.",
+    "tags": []
+  },
+  "Neuroforce": {
+    "num": 233,
+    "rating": 2.5,
+    "short_desc": "This Pokemon's attacks that are super effective against the target do 1.25x damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Neutralizing Gas": {
+    "num": 256,
+    "rating": 3.5,
+    "short_desc": "While this Pokemon is active, Abilities have no effect.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "No Guard": {
+    "num": 99,
+    "rating": 4,
+    "short_desc": "Every move used by or against this Pokemon will always hit.",
+    "tags": []
+  },
+  "Normalize": {
+    "num": 96,
+    "rating": 0,
+    "short_desc": "This Pokemon's moves are changed to be Normal type and have 1.2x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Oblivious": {
+    "num": 12,
+    "rating": 1.5,
+    "short_desc": "This Pokemon cannot be infatuated or taunted. Immune to Intimidate.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Opportunist": {
+    "num": 290,
+    "rating": 3,
+    "short_desc": "When an opposing Pokemon has a stat stage raised, this Pokemon copies the effect.",
+    "tags": []
+  },
+  "Orichalcum Pulse": {
+    "num": 288,
+    "rating": 4.5,
+    "short_desc": "On switch-in, summons Sunny Day. During Sunny Day, Attack is 1.3333x.",
+    "tags": [
+      "switch_trigger",
+      "weather_setter"
+    ]
+  },
+  "Overcoat": {
+    "num": 142,
+    "rating": 2,
+    "short_desc": "This Pokemon is immune to powder moves, Sandstorm damage, and Effect Spore.",
+    "tags": [
+      "damage_modifier",
+      "immunity"
+    ]
+  },
+  "Overgrow": {
+    "num": 65,
+    "rating": 2,
+    "short_desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Grass attacks.",
+    "tags": []
+  },
+  "Own Tempo": {
+    "num": 20,
+    "rating": 1.5,
+    "short_desc": "This Pokemon cannot be confused. Immune to Intimidate.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Parental Bond": {
+    "num": 185,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's damaging moves hit twice. The second hit has its damage quartered.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Pastel Veil": {
+    "num": 257,
+    "rating": 2,
+    "short_desc": "This Pokemon and its allies cannot be poisoned. On switch-in, cures poisoned allies.",
+    "tags": [
+      "status_immunity",
+      "switch_trigger"
+    ]
+  },
+  "Perish Body": {
+    "num": 253,
+    "rating": 1,
+    "short_desc": "Making contact with this Pokemon starts the Perish Song effect for it and the attacker.",
+    "tags": []
+  },
+  "Pickpocket": {
+    "num": 124,
+    "rating": 1,
+    "short_desc": "If this Pokemon has no item and is hit by a contact move, it steals the attacker's item.",
+    "tags": []
+  },
+  "Pickup": {
+    "num": 53,
+    "rating": 0.5,
+    "short_desc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn.",
+    "tags": []
+  },
+  "Pixilate": {
+    "num": 182,
+    "rating": 4,
+    "short_desc": "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Plus": {
+    "num": 57,
+    "rating": 0,
+    "short_desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x.",
+    "tags": []
+  },
+  "Poison Heal": {
+    "num": 90,
+    "rating": 4,
+    "short_desc": "This Pokemon is healed by 1/8 of its max HP each turn when poisoned; no HP loss.",
+    "tags": [
+      "healing"
+    ]
+  },
+  "Poison Point": {
+    "num": 38,
+    "rating": 1.5,
+    "short_desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned.",
+    "tags": []
+  },
+  "Poison Puppeteer": {
+    "num": 310,
+    "rating": 3,
+    "short_desc": "Pecharunt: If this Pokemon poisons a target, the target also becomes confused.",
+    "tags": []
+  },
+  "Poison Touch": {
+    "num": 143,
+    "rating": 2,
+    "short_desc": "This Pokemon's contact moves have a 30% chance of poisoning.",
+    "tags": []
+  },
+  "Power Construct": {
+    "num": 211,
+    "rating": 5,
+    "short_desc": "If Zygarde 10%/50%, changes to Complete if at 1/2 max HP or less at end of turn.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Power Spot": {
+    "num": 249,
+    "rating": 0,
+    "short_desc": "This Pokemon's allies have the power of their moves multiplied by 1.3.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Power of Alchemy": {
+    "num": 223,
+    "rating": 0,
+    "short_desc": "This Pokemon copies the Ability of an ally that faints.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Prankster": {
+    "num": 158,
+    "rating": 4,
+    "short_desc": "This Pokemon's Status moves have priority raised by 1, but Dark types are immune.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Pressure": {
+    "num": 46,
+    "rating": 2.5,
+    "short_desc": "If this Pokemon is the target of a foe's move, that move loses one additional PP.",
+    "tags": []
+  },
+  "Primordial Sea": {
+    "num": 189,
+    "rating": 4.5,
+    "short_desc": "On switch-in, heavy rain begins until this Ability is not active in battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Prism Armor": {
+    "num": 232,
+    "rating": 3,
+    "short_desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Propeller Tail": {
+    "num": 239,
+    "rating": 0,
+    "short_desc": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+    "tags": []
+  },
+  "Protean": {
+    "num": 168,
+    "rating": 4,
+    "short_desc": "This Pokemon's type changes to the type of the move it is using. Once per switch-in.",
+    "tags": []
+  },
+  "Protosynthesis": {
+    "num": 281,
+    "rating": 3,
+    "short_desc": "Sunny Day active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Psychic Surge": {
+    "num": 227,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Psychic Terrain.",
+    "tags": [
+      "switch_trigger",
+      "terrain_setter",
+      "weather_setter"
+    ]
+  },
+  "Punk Rock": {
+    "num": 244,
+    "rating": 3.5,
+    "short_desc": "This Pokemon receives 1/2 damage from sound moves. Its own have 1.3x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Pure Power": {
+    "num": 74,
+    "rating": 5,
+    "short_desc": "This Pokemon's Attack is doubled.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Purifying Salt": {
+    "num": 272,
+    "rating": 4,
+    "short_desc": "Ghost damage to this Pokemon dealt with a halved offensive stat; can't be statused.",
+    "tags": [
+      "damage_modifier",
+      "status_immunity"
+    ]
+  },
+  "Quark Drive": {
+    "num": 282,
+    "rating": 3,
+    "short_desc": "Electric Terrain active or Booster Energy used: highest stat is 1.3x, or 1.5x if Speed.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Queenly Majesty": {
+    "num": 214,
+    "rating": 2.5,
+    "short_desc": "This Pokemon and its allies are protected from opposing priority moves.",
+    "tags": []
+  },
+  "Quick Draw": {
+    "num": 259,
+    "rating": 2.5,
+    "short_desc": "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+    "tags": []
+  },
+  "Quick Feet": {
+    "num": 95,
+    "rating": 2.5,
+    "short_desc": "If this Pokemon is statused, its Speed is 1.5x; ignores Speed drop from paralysis.",
+    "tags": []
+  },
+  "RKS System": {
+    "num": 225,
+    "rating": 4,
+    "short_desc": "If this Pokemon is a Silvally, its type changes to match its held Memory.",
+    "tags": []
+  },
+  "Rain Dish": {
+    "num": 44,
+    "rating": 1.5,
+    "short_desc": "If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn.",
+    "tags": [
+      "healing"
+    ]
+  },
+  "Rattled": {
+    "num": 155,
+    "rating": 1,
+    "short_desc": "Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack, or Intimidated.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Receiver": {
+    "num": 222,
+    "rating": 0,
+    "short_desc": "This Pokemon copies the Ability of an ally that faints.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Reckless": {
+    "num": 120,
+    "rating": 3,
+    "short_desc": "This Pokemon's attacks with recoil or crash damage have 1.2x power; not Struggle.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Refrigerate": {
+    "num": 174,
+    "rating": 4,
+    "short_desc": "This Pokemon's Normal-type moves become Ice type and have 1.2x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Regenerator": {
+    "num": 144,
+    "rating": 4.5,
+    "short_desc": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
+    "tags": [
+      "healing",
+      "switch_trigger"
+    ]
+  },
+  "Ripen": {
+    "num": 247,
+    "rating": 2,
+    "short_desc": "When this Pokemon eats certain Berries, the effects are doubled.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Rivalry": {
+    "num": 79,
+    "rating": 0,
+    "short_desc": "This Pokemon's attacks do 1.25x on same gender targets; 0.75x on opposite gender.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Rock Head": {
+    "num": 69,
+    "rating": 3,
+    "short_desc": "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Rocky Payload": {
+    "num": 276,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Rock-type attack.",
+    "tags": []
+  },
+  "Rough Skin": {
+    "num": 24,
+    "rating": 2.5,
+    "short_desc": "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+    "tags": []
+  },
+  "Run Away": {
+    "num": 50,
+    "rating": 0,
+    "short_desc": "No competitive use.",
+    "tags": []
+  },
+  "Sand Force": {
+    "num": 159,
+    "rating": 2,
+    "short_desc": "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+    "tags": [
+      "damage_modifier",
+      "immunity"
+    ]
+  },
+  "Sand Rush": {
+    "num": 146,
+    "rating": 3,
+    "short_desc": "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm.",
+    "tags": [
+      "damage_modifier",
+      "immunity",
+      "speed_modifier"
+    ]
+  },
+  "Sand Spit": {
+    "num": 245,
+    "rating": 1,
+    "short_desc": "When this Pokemon is hit by an attack, the effect of Sandstorm begins.",
+    "tags": []
+  },
+  "Sand Stream": {
+    "num": 45,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Sandstorm.",
+    "tags": [
+      "switch_trigger",
+      "weather_setter"
+    ]
+  },
+  "Sand Veil": {
+    "num": 8,
+    "rating": 1.5,
+    "short_desc": "If Sandstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Sandstorm.",
+    "tags": [
+      "damage_modifier",
+      "immunity"
+    ]
+  },
+  "Sap Sipper": {
+    "num": 157,
+    "rating": 3,
+    "short_desc": "This Pokemon's Attack is raised 1 stage if hit by a Grass move; Grass immunity.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Schooling": {
+    "num": 208,
+    "rating": 3,
+    "short_desc": "If user is Wishiwashi, changes to School Form if it has > 1/4 max HP, else Solo Form.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Scrappy": {
+    "num": 113,
+    "rating": 3,
+    "short_desc": "Fighting, Normal moves hit Ghost. Immune to Intimidate.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Screen Cleaner": {
+    "num": 251,
+    "rating": 2,
+    "short_desc": "On switch-in, the effects of Aurora Veil, Light Screen, and Reflect end for both sides.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Seed Sower": {
+    "num": 269,
+    "rating": 2.5,
+    "short_desc": "When this Pokemon is hit by an attack, the effect of Grassy Terrain begins.",
+    "tags": []
+  },
+  "Serene Grace": {
+    "num": 32,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's moves have their secondary effect chance doubled.",
+    "tags": []
+  },
+  "Shadow Shield": {
+    "num": 231,
+    "rating": 3.5,
+    "short_desc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Shadow Tag": {
+    "num": 23,
+    "rating": 5,
+    "short_desc": "Prevents foes from choosing to switch unless they also have this Ability.",
+    "tags": []
+  },
+  "Sharpness": {
+    "num": 292,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's slicing moves have their power multiplied by 1.5.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Shed Skin": {
+    "num": 61,
+    "rating": 3,
+    "short_desc": "This Pokemon has a 33% chance to have its status cured at the end of each turn.",
+    "tags": []
+  },
+  "Sheer Force": {
+    "num": 125,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's attacks with secondary effects have 1.3x power; nullifies the effects.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Shell Armor": {
+    "num": 75,
+    "rating": 1,
+    "short_desc": "This Pokemon cannot be struck by a critical hit.",
+    "tags": []
+  },
+  "Shield Dust": {
+    "num": 19,
+    "rating": 2,
+    "short_desc": "This Pokemon is not affected by the secondary effect of another Pokemon's attack.",
+    "tags": []
+  },
+  "Shields Down": {
+    "num": 197,
+    "rating": 3,
+    "short_desc": "If Minior, switch-in/end of turn it changes to Core at 1/2 max HP or less, else Meteor.",
+    "tags": [
+      "status_immunity",
+      "switch_trigger"
+    ]
+  },
+  "Simple": {
+    "num": 86,
+    "rating": 4,
+    "short_desc": "When one of this Pokemon's stat stages is raised or lowered, the amount is doubled.",
+    "tags": []
+  },
+  "Skill Link": {
+    "num": 92,
+    "rating": 3,
+    "short_desc": "This Pokemon's multi-hit attacks always hit the maximum number of times.",
+    "tags": []
+  },
+  "Slow Start": {
+    "num": 112,
+    "rating": -1,
+    "short_desc": "On switch-in, this Pokemon's Attack and Speed are halved for 5 turns.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Slush Rush": {
+    "num": 202,
+    "rating": 3,
+    "short_desc": "If Snow is active, this Pokemon's Speed is doubled.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Sniper": {
+    "num": 97,
+    "rating": 2,
+    "short_desc": "If this Pokemon strikes with a critical hit, the damage is multiplied by 1.5.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Snow Cloak": {
+    "num": 81,
+    "rating": 1.5,
+    "short_desc": "If Snow is active, this Pokemon's evasiveness is 1.25x.",
+    "tags": []
+  },
+  "Snow Warning": {
+    "num": 117,
+    "rating": 4,
+    "short_desc": "On switch-in, this Pokemon summons Snow.",
+    "tags": [
+      "switch_trigger",
+      "weather_setter"
+    ]
+  },
+  "Solar Power": {
+    "num": 94,
+    "rating": 2,
+    "short_desc": "If Sunny Day is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Solid Rock": {
+    "num": 116,
+    "rating": 3,
+    "short_desc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Soul-Heart": {
+    "num": 220,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's Special Attack is raised by 1 stage when another Pokemon faints.",
+    "tags": []
+  },
+  "Soundproof": {
+    "num": 43,
+    "rating": 2,
+    "short_desc": "This Pokemon is immune to sound-based moves, unless it used the move.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Speed Boost": {
+    "num": 3,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's Speed is raised 1 stage at the end of each full turn on the field.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Stakeout": {
+    "num": 198,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's offensive stat is doubled against a target that switched in this turn.",
+    "tags": []
+  },
+  "Stall": {
+    "num": 100,
+    "rating": -1,
+    "short_desc": "This Pokemon moves last among Pokemon using the same or greater priority moves.",
+    "tags": []
+  },
+  "Stalwart": {
+    "num": 242,
+    "rating": 0,
+    "short_desc": "This Pokemon's moves cannot be redirected to a different target by any effect.",
+    "tags": []
+  },
+  "Stamina": {
+    "num": 192,
+    "rating": 4,
+    "short_desc": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Stance Change": {
+    "num": 176,
+    "rating": 4,
+    "short_desc": "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
+    "tags": []
+  },
+  "Static": {
+    "num": 9,
+    "rating": 2,
+    "short_desc": "30% chance a Pokemon making contact with this Pokemon will be paralyzed.",
+    "tags": []
+  },
+  "Steadfast": {
+    "num": 80,
+    "rating": 1,
+    "short_desc": "If this Pokemon flinches, its Speed is raised by 1 stage.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Steam Engine": {
+    "num": 243,
+    "rating": 2,
+    "short_desc": "This Pokemon's Speed is raised by 6 stages after it is damaged by Fire/Water moves.",
+    "tags": [
+      "damage_modifier",
+      "speed_modifier"
+    ]
+  },
+  "Steelworker": {
+    "num": 200,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's offensive stat is multiplied by 1.5 while using a Steel-type attack.",
+    "tags": []
+  },
+  "Steely Spirit": {
+    "num": 252,
+    "rating": 3.5,
+    "short_desc": "This Pokemon and its allies' Steel-type moves have their power multiplied by 1.5.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Stench": {
+    "num": 1,
+    "rating": 0.5,
+    "short_desc": "This Pokemon's attacks without a chance to flinch gain a 10% chance to flinch.",
+    "tags": []
+  },
+  "Sticky Hold": {
+    "num": 60,
+    "rating": 1.5,
+    "short_desc": "This Pokemon cannot lose its held item due to another Pokemon's Ability or attack.",
+    "tags": []
+  },
+  "Storm Drain": {
+    "num": 114,
+    "rating": 3,
+    "short_desc": "This Pokemon draws Water moves to itself to raise Sp. Atk by 1; Water immunity.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Strong Jaw": {
+    "num": 173,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Sturdy": {
+    "num": 5,
+    "rating": 3,
+    "short_desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Suction Cups": {
+    "num": 21,
+    "rating": 1,
+    "short_desc": "This Pokemon cannot be forced to switch out by another Pokemon's attack or item.",
+    "tags": []
+  },
+  "Super Luck": {
+    "num": 105,
+    "rating": 1.5,
+    "short_desc": "This Pokemon's critical hit ratio is raised by 1 stage.",
+    "tags": []
+  },
+  "Supersweet Syrup": {
+    "num": 306,
+    "rating": 1.5,
+    "short_desc": "On switch-in, this Pokemon lowers the evasiveness of opponents 1 stage. Once per battle.",
+    "tags": [
+      "switch_trigger"
+    ]
+  },
+  "Supreme Overlord": {
+    "num": 293,
+    "rating": 4,
+    "short_desc": "This Pokemon's moves have 10% more power for each fainted ally, up to 5 allies.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Surge Surfer": {
+    "num": 207,
+    "rating": 3,
+    "short_desc": "If Electric Terrain is active, this Pokemon's Speed is doubled.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Swarm": {
+    "num": 68,
+    "rating": 2,
+    "short_desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Bug attacks.",
+    "tags": []
+  },
+  "Sweet Veil": {
+    "num": 175,
+    "rating": 2,
+    "short_desc": "This Pokemon and its allies cannot fall asleep; those already asleep do not wake up.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Swift Swim": {
+    "num": 33,
+    "rating": 3,
+    "short_desc": "If Rain Dance is active, this Pokemon's Speed is doubled.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Sword of Ruin": {
+    "num": 285,
+    "rating": 4.5,
+    "short_desc": "Active Pokemon without this Ability have their Defense multiplied by 0.75.",
+    "tags": []
+  },
+  "Symbiosis": {
+    "num": 180,
+    "rating": 0,
+    "short_desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately.",
+    "tags": []
+  },
+  "Synchronize": {
+    "num": 28,
+    "rating": 2,
+    "short_desc": "If another Pokemon burns/poisons/paralyzes this Pokemon, it also gets that status.",
+    "tags": []
+  },
+  "Tablets of Ruin": {
+    "num": 284,
+    "rating": 4.5,
+    "short_desc": "Active Pokemon without this Ability have their Attack multiplied by 0.75.",
+    "tags": []
+  },
+  "Tangled Feet": {
+    "num": 77,
+    "rating": 1,
+    "short_desc": "This Pokemon's evasiveness is doubled as long as it is confused.",
+    "tags": []
+  },
+  "Tangling Hair": {
+    "num": 221,
+    "rating": 2,
+    "short_desc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+    "tags": []
+  },
+  "Technician": {
+    "num": 101,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's moves of 60 power or less have 1.5x power, including Struggle.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Telepathy": {
+    "num": 140,
+    "rating": 0,
+    "short_desc": "This Pokemon does not take damage from attacks made by its allies.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Tera Shell": {
+    "num": 308,
+    "rating": 3.5,
+    "short_desc": "Terapagos: If full HP, attacks taken have 0.5x effectiveness unless naturally immune.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Tera Shift": {
+    "num": 307,
+    "rating": 3,
+    "short_desc": "If this Pokemon is a Terapagos, it transforms into its Terastal Form on entry.",
+    "tags": []
+  },
+  "Teraform Zero": {
+    "num": 309,
+    "rating": 3,
+    "short_desc": "Terapagos: Terastallizing ends the effects of weather and terrain. Once per battle.",
+    "tags": []
+  },
+  "Teravolt": {
+    "num": 164,
+    "rating": 3,
+    "short_desc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Thermal Exchange": {
+    "num": 270,
+    "rating": 2.5,
+    "short_desc": "This Pokemon's Attack is raised by 1 when damaged by Fire moves; can't be burned.",
+    "tags": [
+      "damage_modifier",
+      "status_immunity"
+    ]
+  },
+  "Thick Fat": {
+    "num": 47,
+    "rating": 3.5,
+    "short_desc": "Fire-/Ice-type moves against this Pokemon deal damage with a halved offensive stat.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Tinted Lens": {
+    "num": 110,
+    "rating": 4,
+    "short_desc": "This Pokemon's attacks that are not very effective on a target deal double damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Torrent": {
+    "num": 67,
+    "rating": 2,
+    "short_desc": "At 1/3 or less of its max HP, this Pokemon's offensive stat is 1.5x with Water attacks.",
+    "tags": []
+  },
+  "Tough Claws": {
+    "num": 181,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's contact moves have their power multiplied by 1.3.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Toxic Boost": {
+    "num": 137,
+    "rating": 3,
+    "short_desc": "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Toxic Chain": {
+    "num": 305,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's attacks have a 30% chance of badly poisoning.",
+    "tags": []
+  },
+  "Toxic Debris": {
+    "num": 295,
+    "rating": 3.5,
+    "short_desc": "If this Pokemon is hit by a physical attack, Toxic Spikes are set on the opposing side.",
+    "tags": []
+  },
+  "Trace": {
+    "num": 36,
+    "rating": 2.5,
+    "short_desc": "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.",
+    "tags": [
+      "damage_modifier",
+      "switch_trigger"
+    ]
+  },
+  "Transistor": {
+    "num": 262,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's offensive stat is multiplied by 1.3 while using an Electric-type attack.",
+    "tags": []
+  },
+  "Triage": {
+    "num": 205,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's healing moves have their priority increased by 3.",
+    "tags": []
+  },
+  "Truant": {
+    "num": 54,
+    "rating": -1,
+    "short_desc": "This Pokemon skips every other turn instead of using a move.",
+    "tags": []
+  },
+  "Turboblaze": {
+    "num": 163,
+    "rating": 3,
+    "short_desc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Unaware": {
+    "num": 109,
+    "rating": 4,
+    "short_desc": "This Pokemon ignores other Pokemon's stat stages when taking or doing damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Unburden": {
+    "num": 84,
+    "rating": 3.5,
+    "short_desc": "Speed is doubled on held item loss; boost is lost if it switches, gets new item/Ability.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Unnerve": {
+    "num": 127,
+    "rating": 1,
+    "short_desc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries.",
+    "tags": []
+  },
+  "Unseen Fist": {
+    "num": 260,
+    "rating": 2,
+    "short_desc": "This Pokemon's contact moves ignore the target's protection, except Max Guard.",
+    "tags": []
+  },
+  "Vessel of Ruin": {
+    "num": 284,
+    "rating": 4.5,
+    "short_desc": "Active Pokemon without this Ability have their Special Attack multiplied by 0.75.",
+    "tags": []
+  },
+  "Victory Star": {
+    "num": 162,
+    "rating": 2,
+    "short_desc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1.",
+    "tags": []
+  },
+  "Vital Spirit": {
+    "num": 72,
+    "rating": 1.5,
+    "short_desc": "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Volt Absorb": {
+    "num": 10,
+    "rating": 3.5,
+    "short_desc": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity.",
+    "tags": [
+      "healing",
+      "immunity"
+    ]
+  },
+  "Wandering Spirit": {
+    "num": 254,
+    "rating": 2.5,
+    "short_desc": "Pokemon making contact with this Pokemon have their Ability swapped with this one.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Water Absorb": {
+    "num": 11,
+    "rating": 3.5,
+    "short_desc": "This Pokemon heals 1/4 of its max HP when hit by Water moves; Water immunity.",
+    "tags": [
+      "healing",
+      "immunity"
+    ]
+  },
+  "Water Bubble": {
+    "num": 199,
+    "rating": 4.5,
+    "short_desc": "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
+    "tags": [
+      "damage_modifier",
+      "status_immunity"
+    ]
+  },
+  "Water Compaction": {
+    "num": 195,
+    "rating": 1.5,
+    "short_desc": "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Water Veil": {
+    "num": 41,
+    "rating": 2,
+    "short_desc": "This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+    "tags": [
+      "status_immunity"
+    ]
+  },
+  "Weak Armor": {
+    "num": 133,
+    "rating": 1,
+    "short_desc": "If a physical attack hits this Pokemon, Defense is lowered by 1, Speed is raised by 2.",
+    "tags": [
+      "speed_modifier"
+    ]
+  },
+  "Well-Baked Body": {
+    "num": 273,
+    "rating": 3.5,
+    "short_desc": "This Pokemon's Defense is raised 2 stages if hit by a Fire move; Fire immunity.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "White Smoke": {
+    "num": 73,
+    "rating": 2,
+    "short_desc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+    "tags": []
+  },
+  "Wimp Out": {
+    "num": 193,
+    "rating": 1,
+    "short_desc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Wind Power": {
+    "num": 277,
+    "rating": 1,
+    "short_desc": "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Wind Rider": {
+    "num": 274,
+    "rating": 3.5,
+    "short_desc": "Attack raised by 1 if hit by a wind move or Tailwind begins. Wind move immunity.",
+    "tags": [
+      "immunity"
+    ]
+  },
+  "Wonder Guard": {
+    "num": 25,
+    "rating": 5,
+    "short_desc": "This Pokemon can only be damaged by supereffective moves and indirect damage.",
+    "tags": [
+      "damage_modifier"
+    ]
+  },
+  "Wonder Skin": {
+    "num": 147,
+    "rating": 2,
+    "short_desc": "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+    "tags": []
+  },
+  "Zen Mode": {
+    "num": 161,
+    "rating": 0,
+    "short_desc": "If Darmanitan, at end of turn changes Mode to Standard if > 1/2 max HP, else Zen.",
+    "tags": []
+  },
+  "Zero to Hero": {
+    "num": 278,
+    "rating": 5,
+    "short_desc": "If this Pokemon is a Palafin in Zero Form, switching out has it change to Hero Form.",
+    "tags": []
+  }
+}

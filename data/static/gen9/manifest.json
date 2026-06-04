@@ -1,0 +1,37 @@
+{
+  "active_subset_policy": {
+    "ability_min_usage": 1.0,
+    "item_min_usage": 1.0,
+    "max_species": null,
+    "move_min_usage": 1.0,
+    "observed_actions_are_preserved": true,
+    "species_min_raw_count": 100,
+    "species_min_usage": 0.05
+  },
+  "counts": {
+    "abilities": 310,
+    "active_abilities": 231,
+    "active_items": 138,
+    "active_moves": 515,
+    "active_species": 418,
+    "all_usage_species": 763,
+    "items": 224,
+    "moves": 685,
+    "observed_samples_scanned": 542613,
+    "species": 876,
+    "tail_species": 380,
+    "usage_species": 763
+  },
+  "formatid": "gen9ou",
+  "full_catalog_does_not_expand_tensor_dims": true,
+  "month": "2026-04",
+  "rating_cutoff": 0,
+  "sources": {
+    "abilities": "https://play.pokemonshowdown.com/data/abilities.js",
+    "items": "https://play.pokemonshowdown.com/data/items.js",
+    "moves": "https://play.pokemonshowdown.com/data/moves.json",
+    "moveset": "https://www.smogon.com/stats/2026-04/moveset/gen9ou-0.txt",
+    "pokedex": "https://play.pokemonshowdown.com/data/pokedex.json",
+    "usage": "https://www.smogon.com/stats/2026-04/gen9ou-0.txt"
+  }
+}
