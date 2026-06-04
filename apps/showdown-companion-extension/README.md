@@ -42,14 +42,14 @@
 
 ```powershell
 $env:PYTHONPATH = "src"
-python -m pokestrategist.cli.serve_showdown --checkpoint runs/pokestrategist_v1_metamon_recent10000_honestv4_fixall_v1/best_model.pt --device auto
+python -m pokestrategist.cli.serve_showdown --checkpoint models/v1_metamon_gen9ou_1550_full_model.pt --device auto
 ```
 
 如果你是通过包脚本启动，也可以用：
 
 ```powershell
 $env:PYTHONPATH = "src"
-pokestrategist-serve-showdown --checkpoint runs/pokestrategist_v1_metamon_recent10000_honestv4_fixall_v1/best_model.pt --device auto
+pokestrategist-serve-showdown --checkpoint models/v1_metamon_gen9ou_1550_full_model.pt --device auto
 ```
 
 默认服务地址：

@@ -4,3 +4,7 @@
 /.vscode
 /data
 /runs
+/models
+__pycache__/
+*.egg-info/
+

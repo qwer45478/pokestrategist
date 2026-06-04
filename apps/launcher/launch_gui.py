@@ -7,7 +7,7 @@ PokeStrategist Showdown 本地服务启动器 (GUI)
     cd apps/launcher
     python launch_gui.py
 
-或直接双击 launch_gui.py（如果 .py 关联到 PokePilot conda 环境的 python）。
+或直接双击 launch_gui.py（如果 .py 关联到 pokestrategist/PokePilot conda 环境的 python）。
 """
 
 from __future__ import annotations
@@ -48,7 +48,8 @@ from typing import Any
 
 # ── 项目根目录 ──────────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-RUNS_DIR = PROJECT_ROOT / "runs"
+MODELS_DIR = PROJECT_ROOT / "models"
+RUNS_DIR = PROJECT_ROOT / "runs"  # 保留以兼容旧路径
 SRC_DIR = PROJECT_ROOT / "src"
 
 # ── 默认配置 ────────────────────────────────────────────────
@@ -60,28 +61,48 @@ DEFAULT_HIDDEN_TOPK = 4  # None in CLI, but typically 4
 
 
 def discover_checkpoints() -> list[tuple[str, str]]:
-    """扫描 runs/ 目录，返回 [(显示名, 路径), ...] 列表。"""
-    checkpoints: list[tuple[str, str]] = []
-    if not RUNS_DIR.exists():
-        return checkpoints
+    """扫描 models/ 目录，返回 [(显示名, 路径), ...] 列表。
 
-    for run_dir in sorted(RUNS_DIR.iterdir(), reverse=True):
-        if not run_dir.is_dir():
-            continue
-        pt_file = run_dir / "best_model.pt"
-        ranking_pt = run_dir / "best_ranking_model.pt"
-        if pt_file.exists():
-            checkpoints.append((f"{run_dir.name}  (composite)", str(pt_file)))
-        if ranking_pt.exists() and ranking_pt != pt_file:
-            checkpoints.append((f"{run_dir.name}  (ranking)", str(ranking_pt)))
+    模型文件命名规则：<模型名>_model.pt 或 <模型名>_ranking.pt。
+    也兼容 runs/ 子目录中的旧路径。
+    """
+    checkpoints: list[tuple[str, str]] = []
+
+    # 1) 优先扫描 models/ 扁平目录
+    if MODELS_DIR.exists():
+        for pt_file in sorted(MODELS_DIR.glob("*.pt"), reverse=True):
+            if not pt_file.is_file():
+                continue
+            stem = pt_file.stem  # e.g. "v1_metamon_gen9ou_1550_full_model"
+            if stem.endswith("_ranking"):
+                display = stem.replace("_ranking", "") + "  (ranking)"
+            elif stem.endswith("_model"):
+                display = stem.replace("_model", "") + "  (composite)"
+            else:
+                display = stem
+            checkpoints.append((display, str(pt_file)))
+
+    # 2) 回退：扫描 runs/ 子目录（兼容旧结构）
+    if not checkpoints and RUNS_DIR.exists():
+        for run_dir in sorted(RUNS_DIR.iterdir(), reverse=True):
+            if not run_dir.is_dir():
+                continue
+            pt_file = run_dir / "best_model.pt"
+            ranking_pt = run_dir / "best_ranking_model.pt"
+            if pt_file.exists():
+                checkpoints.append((f"{run_dir.name}  (composite)", str(pt_file)))
+            if ranking_pt.exists() and ranking_pt != pt_file:
+                checkpoints.append((f"{run_dir.name}  (ranking)", str(ranking_pt)))
 
     return checkpoints
 
 
 def find_conda_python() -> str | None:
-    """尝试找到 PokePilot conda 环境中的 python 路径。"""
+    """尝试找到 pokestrategist 或 PokePilot conda 环境中的 python 路径。"""
     candidates = [
         # 常见的 conda env 路径
+        Path.home() / ".conda" / "envs" / "pokestrategist" / "python.exe",
+        Path.home() / "anaconda3" / "envs" / "pokestrategist" / "python.exe",
         Path.home() / ".conda" / "envs" / "PokePilot" / "python.exe",
         Path.home() / "anaconda3" / "envs" / "PokePilot" / "python.exe",
         Path(os.environ.get("CONDA_PREFIX", "")) / "python.exe" if os.environ.get("CONDA_PREFIX") else None,
@@ -284,9 +305,10 @@ class PokeStrategistLauncher:
 
     def _browse_checkpoint(self) -> None:
         from tkinter import filedialog
+        default_dir = str(MODELS_DIR) if MODELS_DIR.exists() else (str(RUNS_DIR) if RUNS_DIR.exists() else str(PROJECT_ROOT))
         path = filedialog.askopenfilename(
             title="选择模型 Checkpoint",
-            initialdir=str(RUNS_DIR) if RUNS_DIR.exists() else str(PROJECT_ROOT),
+            initialdir=default_dir,
             filetypes=[("PyTorch Checkpoint", "*.pt"), ("All Files", "*.*")],
         )
         if path:

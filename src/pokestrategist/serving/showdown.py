@@ -42,6 +42,37 @@ RESPONSE_LABELS = tuple(label.value for label in ResponseCluster)
 USED_MOVE_PATTERN = re.compile(r"^(The opposing )?(?P<species>.+?) used (?P<move>.+?)!$", re.IGNORECASE)
 SWITCH_PATTERN = re.compile(r"^(The opposing )?(?P<species>.+?) (?:switched in|went back to|was sent out)!$", re.IGNORECASE)
 
+# Patterns that definitively signal Team Preview is over and the battle has begun.
+# Showdown prints "Go! <Pokemon>!" for your lead and "<Player> sent out <Pokemon>!"
+# for the opponent lead.  Chinese UI uses "去吧！" / "派出了".
+_BATTLE_START_SENTINELS = re.compile(
+    r"\bGo!\s+\S|sent out|去吧！|派出了",
+    re.IGNORECASE,
+)
+
+
+def _detect_battle_start_from_log(lines: list[str]) -> bool:
+    """Return True if the battle log contains sent-out messages indicating
+    Team Preview has concluded and the first turn is about to begin."""
+    if not lines:
+        return False
+    combined = " ".join(lines)
+    return bool(_BATTLE_START_SENTINELS.search(combined))
+
+
+def _resolve_is_team_preview(snapshot: ShowdownBattleSnapshot) -> bool:
+    """Determine whether the snapshot is still in Team Preview phase.
+
+    Primary signal: ``is_team_preview`` field populated by the browser extension.
+    Fallback: inspect the recent battle log for sent-out markers (Go! / sent out)."""
+    if snapshot.is_team_preview:
+        return True
+    # Fallback: if the extension didn't set the flag, check the battle log.
+    if not snapshot.legal_moves and snapshot.legal_switches:
+        if not _detect_battle_start_from_log(snapshot.recent_log):
+            return True
+    return False
+
 
 class ShowdownActionSnapshot(BaseModel):
     model_config = ConfigDict(extra="ignore")
@@ -78,6 +109,7 @@ class ShowdownBattleSnapshot(BaseModel):
     page_title: str | None = Field(default=None, alias="pageTitle")
     turn: int | str | None = None
     forced_switch: bool = Field(default=False, alias="forcedSwitch")
+    is_team_preview: bool = Field(default=False, alias="isTeamPreview")
     self_side: ShowdownSideSnapshot = Field(alias="self")
     opponent_side: ShowdownSideSnapshot = Field(alias="opponent")
     legal_moves: list[ShowdownActionSnapshot] = Field(default_factory=list, alias="legalMoves")
@@ -209,6 +241,7 @@ def _history_from_log(lines: list[str]) -> tuple[list[str], dict[str, list[str]]
 
 def _build_legal_actions(snapshot: ShowdownBattleSnapshot) -> list[StructuredAction]:
     actions: list[StructuredAction] = []
+    self_name = (snapshot.self_side.name or "").strip()
     for move in snapshot.legal_moves:
         if move.disabled or not move.label.strip():
             continue
@@ -223,7 +256,12 @@ def _build_legal_actions(snapshot: ShowdownBattleSnapshot) -> list[StructuredAct
     for index, switch in enumerate(snapshot.legal_switches, start=1):
         if switch.disabled or not switch.label.strip():
             continue
+        lowered_label = switch.label.lower()
+        if "(fainted)" in lowered_label or "(active)" in lowered_label:
+            continue
         species = _clean_switch_species(switch.label)
+        if species and self_name and species.lower() == self_name.lower():
+            continue
         actions.append(
             StructuredAction(
                 actor=PlayerSide.P1,
@@ -275,7 +313,7 @@ def snapshot_to_decision_sample(snapshot: ShowdownBattleSnapshot) -> DecisionSam
     observation = BattleObservation(
         replay_id=_replay_id(snapshot),
         battle_format=_battle_format(snapshot),
-        turn=_parse_turn(snapshot.turn),
+        turn=0 if _resolve_is_team_preview(snapshot) else _parse_turn(snapshot.turn),
         perspective=PlayerSide.P1,
         self_side=self_side,
         opp_side=opp_side,
@@ -506,9 +544,9 @@ class PokeStrategistLocalPredictor:
         response_index = int(outputs["response_logits"][0].argmax().item())
         head_probs = torch.softmax(outputs["head_logits"][0], dim=-1)
 
-        # Detect team preview: all actions are switches, no moves available, turn 0/1
+        # Detect team preview: all actions are switches, no moves available, turn 0/1 or team preview
         all_switches = all(e.get("head") == "switch" for e in action_entries if e)
-        is_lead_phase = all_switches and len(action_entries) >= 3 and sample.turn <= 1
+        is_lead_phase = (all_switches and len(action_entries) >= 3 and sample.turn <= 1) or (sample.turn <= 0)
 
         metadata = {
             "plan_label": PLAN_LABELS[plan_index],

@@ -26,8 +26,9 @@
     for (const sel of sels) {
       for (const b of document.querySelectorAll(sel)) {
         if (!(b instanceof HTMLButtonElement)) continue;
-        const lb = textOf(b); if (!lb || b.disabled || seen.has(lb)) continue;
-        seen.add(lb); res.push({ label: lb, disabled: b.disabled, tooltip: b.getAttribute("data-tooltip") || b.title || "" });
+        const isDisabled = b.disabled || b.classList.contains("disabled") || b.getAttribute("aria-disabled") === "true";
+        const lb = textOf(b); if (!lb || isDisabled || seen.has(lb)) continue;
+        seen.add(lb); res.push({ label: lb, disabled: isDisabled, tooltip: b.getAttribute("data-tooltip") || b.title || "" });
       }
     }
     return res;
@@ -41,10 +42,40 @@
     return vals.slice(-8);
   }
 
+  /* Detect battle start from log text — the definitive signal that Team Preview is over.
+   * Showdown prints "Go! <Pokemon>!" for your lead and "<Player> sent out <Pokemon>!"
+   * for the opponent lead (Chinese: "去吧！" / "派出了").
+   * Mid-battle switches also use "Go!" but they always appear AFTER turn markers,
+   * so this function is only called during the Team-Preview → battle transition window. */
+  function detectBattleStartFromLog(logLines) {
+    if (!logLines || !logLines.length) return false;
+    const combined = logLines.join(" ");
+    return /\bgo!\s+\S/i.test(combined) ||
+           /\bsent out\b/i.test(combined) ||
+           /去吧！/.test(combined) ||
+           /派出了/.test(combined);
+  }
+
   function inferTurn() {
-    const e = pickFirstText([".turn",".turnstatus",".battle .turn"]);
-    if (e) return e;
-    return parseBattleLog().find(l => /^turn\s+\d+/i.test(l)) || "Turn unknown";
+    if (document.querySelector("button[name='chooseTeamPreview']")) {
+      return "Turn 0";
+    }
+    for (const sel of [".turn", ".battle .turn", ".turnstatus"]) {
+      const txt = textOf(document.querySelector(sel));
+      if (txt && /turn|回合/i.test(txt)) {
+        return txt;
+      }
+    }
+    const logTurn = parseBattleLog().find(l => /^turn\s+\d+/i.test(l));
+    if (logTurn) return logTurn;
+
+    const fallbackTxt = pickFirstText([".turn", ".battle .turn", ".turnstatus"]);
+    if (fallbackTxt && /\d+/.test(fallbackTxt)) {
+      if (!/wait|玩家|timer|秒/i.test(fallbackTxt)) {
+        return fallbackTxt;
+      }
+    }
+    return "Turn 0";
   }
 
   function roomTitle() { return (document.title.replace(/\s*-\s*Pok[eé]mon Showdown!?/i,"").trim()) || "Pokemon Showdown"; }
@@ -52,11 +83,22 @@
   function buildSnapshot() {
     const sides = parseSideStatbars();
     const moves = parseButtons(["button[name='chooseMove']",".movemenu button",".choosemove button"]);
+    const hasTeamPreviewButton = document.querySelector("button[name='chooseTeamPreview']") !== null;
     const switches = parseButtons(["button[name='chooseSwitch']",".switchmenu button",".chooseswitch button","button[name='chooseTeamPreview']"]);
     const logs = parseBattleLog();
+
+    /* Dual-signal Team Preview detection:
+     * 1. Primary: team preview button is visible → definitely in preview
+     * 2. Secondary: if button is gone but battle log does NOT yet contain
+     *    "Go!" / "sent out" / "去吧" / "派出了", we are still in a transition
+     *    window — treat as preview to avoid premature battle-state parsing. */
+    const battleStartedInLog = detectBattleStartFromLog(logs);
+    const isTeamPreview = hasTeamPreviewButton || (!battleStartedInLog && moves.length === 0);
+
     return {
       source: "showdown-dom", pageTitle: roomTitle(), turn: inferTurn(),
       forcedSwitch: switches.length > 0 && moves.length === 0,
+      isTeamPreview: isTeamPreview,
       self: sides.self, opponent: sides.opponent,
       legalMoves: moves, legalSwitches: switches, recentLog: logs,
       observedAt: new Date().toISOString(), url: location.href
